@@ -1,0 +1,4386 @@
+/* variables */
+/* Import */
+footer {
+  background-color: #3f807e; }
+  footer .footer__footer1 {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px; }
+  footer .footer__redesSociales {
+    display: flex;
+    justify-content: space-around;
+    filter: invert(0.7) sepia(7) hue-rotate(50deg);
+    padding: 20px 300px; }
+
+@media only screen and (max-width: 900px) {
+  footer {
+    background-color: #3f807e; }
+    footer .footer__footer1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 15px;
+      text-align: center;
+      padding-bottom: 5px; }
+    footer .footer__redesSociales {
+      display: flex;
+      justify-content: space-around;
+      filter: invert(0.7) sepia(7) hue-rotate(50deg);
+      padding: 0; } }
+
+header {
+  background-color: #3f807e;
+  font-weight: bold; }
+  header .menu {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 10px;
+    margin-bottom: 20px; }
+    header .menu .menu__titulo {
+      font-size: 30px;
+      margin-bottom: 20px; }
+    header .menu nav .menu__Element {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      color: rgba(18, 55, 51, 0.727);
+      font-family: "Rock Salt", cursive; }
+      header .menu nav .menu__Element ul {
+        display: none;
+        background-color: #d1d1d1; }
+      header .menu nav .menu__Element li {
+        display: block; }
+        header .menu nav .menu__Element li:hover ul {
+          display: block;
+          cursor: pointer; }
+
+@media only screen and (max-width: 900px) {
+  header {
+    background-color: #3f807e;
+    font-weight: bold; }
+    header .menu {
+      text-align: center;
+      font-size: 12px;
+      padding-bottom: 10px;
+      margin-bottom: 20px; }
+      header .menu .menu__titulo {
+        font-size: 30px;
+        margin-bottom: 20px; }
+      header .menu nav .menu__Element {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        color: rgba(18, 55, 51, 0.727);
+        font-family: "Rock Salt", cursive;
+        padding: 0;
+        color: white; }
+        header .menu nav .menu__Element ul {
+          display: none;
+          background-color: #d1d1d1; }
+        header .menu nav .menu__Element li {
+          display: block;
+          background-color: #214854;
+          width: 100%;
+          margin: auto;
+          height: 30px;
+          font-weight: normal; }
+          header .menu nav .menu__Element li:hover ul {
+            display: block;
+            cursor: pointer; }
+        header .menu nav .menu__Element a {
+          color: white;
+          font-weight: normal; } }
+
+.sectionMain {
+  position: relative;
+  padding: 20px; }
+
+.sectionMain p {
+  margin-bottom: 30px;
+  font-size: 15px;
+  color: rosybrown;
+  text-align: center; }
+
+.sectionMain h4 {
+  color: burlywood;
+  text-align: center; }
+
+table {
+  margin: auto; }
+
+th {
+  background-color: teal;
+  color: plum; }
+
+td {
+  background-color: powderblue;
+  color: black; }
+
+.familias {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .familias .familiasGroup1 {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 100px 1fr 3fr;
+    grid-template-areas: "familia img element";
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: #214854; }
+    .familias .familiasGroup1 #familia {
+      grid-area: familia; }
+    .familias .familiasGroup1 #img {
+      grid-area: img;
+      width: 100%;
+      margin: auto;
+      display: block;
+      position: relative; }
+    .familias .familiasGroup1 .familiaElement1 {
+      grid-area: element;
+      width: 100wh;
+      height: auto;
+      margin-bottom: 20px;
+      margin-top: 30px;
+      margin-right: 15px;
+      margin-left: 15px;
+      flex: 1;
+      text-align: center;
+      font-size: 13px;
+      display: grid;
+      width: 70px;
+      grid-column-gap: 3px;
+      grid-row-gap: 10px;
+      grid-template-rows: 15vh 15vh 15vh 15vh 15vh;
+      grid-template-columns: 1em;
+      grid-template-areas: "familiaE1" "familiaE2" "familiaE3" "familiaE4" "familiaE5"; }
+      .familias .familiasGroup1 .familiaElement1 .familiaE1 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson1 descriptionPerson1";
+        grid-area: familiaE1; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE1 #namePerson {
+          grid-area: namePerson1;
+          background-color: yellow; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE1 #descriptionPerson {
+          grid-area: descriptionPerson1;
+          background-color: cyan; }
+      .familias .familiasGroup1 .familiaElement1 .familiaE2 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson2 descriptionPerson2";
+        grid-area: familiaE2; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE2 #namePerson {
+          grid-area: namePerson2;
+          background-color: yellow; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE2 #descriptionPerson {
+          grid-area: descriptionPerson2;
+          background-color: cyan; }
+      .familias .familiasGroup1 .familiaElement1 .familiaE3 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson3 descriptionPerson3";
+        grid-area: familiaE3; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE3 #namePerson {
+          grid-area: namePerson3;
+          background-color: yellow; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE3 #descriptionPerson {
+          grid-area: descriptionPerson3;
+          background-color: cyan; }
+      .familias .familiasGroup1 .familiaElement1 .familiaE4 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson4 descriptionPerson4";
+        grid-area: familiaE4; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE4 #namePerson {
+          grid-area: namePerson4;
+          background-color: yellow; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE4 #descriptionPerson {
+          grid-area: descriptionPerson4;
+          background-color: cyan; }
+      .familias .familiasGroup1 .familiaElement1 .familiaE5 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson5 descriptionPerson5";
+        grid-area: familiaE5; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE5 #namePerson {
+          grid-area: namePerson5;
+          background-color: yellow; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE5 #descriptionPerson {
+          grid-area: descriptionPerson5;
+          background-color: cyan; }
+  .familias .familiasGroup2 {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 100px 1fr 3fr;
+    grid-template-areas: "familia img element";
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: #214854; }
+    .familias .familiasGroup2 #familia {
+      grid-area: familia; }
+    .familias .familiasGroup2 #img {
+      grid-area: img;
+      width: 100%;
+      margin: auto;
+      display: block;
+      position: relative; }
+    .familias .familiasGroup2 .familiaElement2 {
+      grid-area: element;
+      width: 100wh;
+      height: auto;
+      margin-bottom: 20px;
+      margin-top: 30px;
+      margin-right: 15px;
+      margin-left: 15px;
+      flex: 1;
+      text-align: center;
+      font-size: 13px;
+      display: grid;
+      width: 70px;
+      grid-column-gap: 3px;
+      grid-row-gap: 10px;
+      grid-template-rows: 15vh 15vh 15vh 15vh nonevh;
+      grid-template-columns: 1em;
+      grid-template-areas: "familiaE1" "familiaE2" "familiaE3" "familiaE4" "familiaE5"; }
+      .familias .familiasGroup2 .familiaElement2 .familiaE1 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson1 descriptionPerson1";
+        grid-area: familiaE1; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE1 #namePerson {
+          grid-area: namePerson1;
+          background-color: yellow; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE1 #descriptionPerson {
+          grid-area: descriptionPerson1;
+          background-color: cyan; }
+      .familias .familiasGroup2 .familiaElement2 .familiaE2 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson2 descriptionPerson2";
+        grid-area: familiaE2; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE2 #namePerson {
+          grid-area: namePerson2;
+          background-color: yellow; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE2 #descriptionPerson {
+          grid-area: descriptionPerson2;
+          background-color: cyan; }
+      .familias .familiasGroup2 .familiaElement2 .familiaE3 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson3 descriptionPerson3";
+        grid-area: familiaE3; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE3 #namePerson {
+          grid-area: namePerson3;
+          background-color: yellow; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE3 #descriptionPerson {
+          grid-area: descriptionPerson3;
+          background-color: cyan; }
+      .familias .familiasGroup2 .familiaElement2 .familiaE4 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson4 descriptionPerson4";
+        grid-area: familiaE4; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE4 #namePerson {
+          grid-area: namePerson4;
+          background-color: yellow; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE4 #descriptionPerson {
+          grid-area: descriptionPerson4;
+          background-color: cyan; }
+      .familias .familiasGroup2 .familiaElement2 .familiaE5 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson5 descriptionPerson5";
+        grid-area: familiaE5; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE5 #namePerson {
+          grid-area: namePerson5;
+          background-color: yellow; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE5 #descriptionPerson {
+          grid-area: descriptionPerson5;
+          background-color: cyan; }
+  .familias .familiasGroup3 {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 100px 1fr 3fr;
+    grid-template-areas: "familia img element";
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: #214854; }
+    .familias .familiasGroup3 #familia {
+      grid-area: familia; }
+    .familias .familiasGroup3 #img {
+      grid-area: img;
+      width: 100%;
+      margin: auto;
+      display: block;
+      position: relative; }
+    .familias .familiasGroup3 .familiaElement3 {
+      grid-area: element;
+      width: 100wh;
+      height: auto;
+      margin-bottom: 20px;
+      margin-top: 30px;
+      margin-right: 15px;
+      margin-left: 15px;
+      flex: 1;
+      text-align: center;
+      font-size: 13px;
+      display: grid;
+      width: 70px;
+      grid-column-gap: 3px;
+      grid-row-gap: 10px;
+      grid-template-rows: 15vh 15vh 15vh 15vh nonevh;
+      grid-template-columns: 1em;
+      grid-template-areas: "familiaE1" "familiaE2" "familiaE3" "familiaE4" "familiaE5"; }
+      .familias .familiasGroup3 .familiaElement3 .familiaE1 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson1 descriptionPerson1";
+        grid-area: familiaE1; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE1 #namePerson {
+          grid-area: namePerson1;
+          background-color: yellow; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE1 #descriptionPerson {
+          grid-area: descriptionPerson1;
+          background-color: cyan; }
+      .familias .familiasGroup3 .familiaElement3 .familiaE2 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson2 descriptionPerson2";
+        grid-area: familiaE2; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE2 #namePerson {
+          grid-area: namePerson2;
+          background-color: yellow; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE2 #descriptionPerson {
+          grid-area: descriptionPerson2;
+          background-color: cyan; }
+      .familias .familiasGroup3 .familiaElement3 .familiaE3 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson3 descriptionPerson3";
+        grid-area: familiaE3; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE3 #namePerson {
+          grid-area: namePerson3;
+          background-color: yellow; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE3 #descriptionPerson {
+          grid-area: descriptionPerson3;
+          background-color: cyan; }
+      .familias .familiasGroup3 .familiaElement3 .familiaE4 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson4 descriptionPerson4";
+        grid-area: familiaE4; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE4 #namePerson {
+          grid-area: namePerson4;
+          background-color: yellow; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE4 #descriptionPerson {
+          grid-area: descriptionPerson4;
+          background-color: cyan; }
+      .familias .familiasGroup3 .familiaElement3 .familiaE5 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson5 descriptionPerson5";
+        grid-area: familiaE5; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE5 #namePerson {
+          grid-area: namePerson5;
+          background-color: yellow; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE5 #descriptionPerson {
+          grid-area: descriptionPerson5;
+          background-color: cyan; }
+  .familias .familiasGroup4 {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 100px 1fr 3fr;
+    grid-template-areas: "familia img element";
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: #214854; }
+    .familias .familiasGroup4 #familia {
+      grid-area: familia; }
+    .familias .familiasGroup4 #img {
+      grid-area: img;
+      width: 100%;
+      margin: auto;
+      display: block;
+      position: relative; }
+    .familias .familiasGroup4 .familiaElement4 {
+      grid-area: element;
+      width: 100wh;
+      height: auto;
+      margin-bottom: 20px;
+      margin-top: 30px;
+      margin-right: 15px;
+      margin-left: 15px;
+      flex: 1;
+      text-align: center;
+      font-size: 13px;
+      display: grid;
+      width: 70px;
+      grid-column-gap: 3px;
+      grid-row-gap: 10px;
+      grid-template-rows: 15vh 15vh 15vh 15vh nonevh;
+      grid-template-columns: 1em;
+      grid-template-areas: "familiaE1" "familiaE2" "familiaE3" "familiaE4" "familiaE5"; }
+      .familias .familiasGroup4 .familiaElement4 .familiaE1 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson1 descriptionPerson1";
+        grid-area: familiaE1; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE1 #namePerson {
+          grid-area: namePerson1;
+          background-color: yellow; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE1 #descriptionPerson {
+          grid-area: descriptionPerson1;
+          background-color: cyan; }
+      .familias .familiasGroup4 .familiaElement4 .familiaE2 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson2 descriptionPerson2";
+        grid-area: familiaE2; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE2 #namePerson {
+          grid-area: namePerson2;
+          background-color: yellow; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE2 #descriptionPerson {
+          grid-area: descriptionPerson2;
+          background-color: cyan; }
+      .familias .familiasGroup4 .familiaElement4 .familiaE3 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson3 descriptionPerson3";
+        grid-area: familiaE3; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE3 #namePerson {
+          grid-area: namePerson3;
+          background-color: yellow; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE3 #descriptionPerson {
+          grid-area: descriptionPerson3;
+          background-color: cyan; }
+      .familias .familiasGroup4 .familiaElement4 .familiaE4 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson4 descriptionPerson4";
+        grid-area: familiaE4; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE4 #namePerson {
+          grid-area: namePerson4;
+          background-color: yellow; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE4 #descriptionPerson {
+          grid-area: descriptionPerson4;
+          background-color: cyan; }
+      .familias .familiasGroup4 .familiaElement4 .familiaE5 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson5 descriptionPerson5";
+        grid-area: familiaE5; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE5 #namePerson {
+          grid-area: namePerson5;
+          background-color: yellow; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE5 #descriptionPerson {
+          grid-area: descriptionPerson5;
+          background-color: cyan; }
+  .familias .familiasGroup5 {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 100px 1fr 3fr;
+    grid-template-areas: "familia img element";
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: #214854; }
+    .familias .familiasGroup5 #familia {
+      grid-area: familia; }
+    .familias .familiasGroup5 #img {
+      grid-area: img;
+      width: 100%;
+      margin: auto;
+      display: block;
+      position: relative; }
+    .familias .familiasGroup5 .familiaElement5 {
+      grid-area: element;
+      width: 100wh;
+      height: auto;
+      margin-bottom: 20px;
+      margin-top: 30px;
+      margin-right: 15px;
+      margin-left: 15px;
+      flex: 1;
+      text-align: center;
+      font-size: 13px;
+      display: grid;
+      width: 70px;
+      grid-column-gap: 3px;
+      grid-row-gap: 10px;
+      grid-template-rows: 15vh 15vh 15vh nonevh nonevh;
+      grid-template-columns: 1em;
+      grid-template-areas: "familiaE1" "familiaE2" "familiaE3" "familiaE4" "familiaE5"; }
+      .familias .familiasGroup5 .familiaElement5 .familiaE1 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson1 descriptionPerson1";
+        grid-area: familiaE1; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE1 #namePerson {
+          grid-area: namePerson1;
+          background-color: yellow; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE1 #descriptionPerson {
+          grid-area: descriptionPerson1;
+          background-color: cyan; }
+      .familias .familiasGroup5 .familiaElement5 .familiaE2 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson2 descriptionPerson2";
+        grid-area: familiaE2; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE2 #namePerson {
+          grid-area: namePerson2;
+          background-color: yellow; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE2 #descriptionPerson {
+          grid-area: descriptionPerson2;
+          background-color: cyan; }
+      .familias .familiasGroup5 .familiaElement5 .familiaE3 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson3 descriptionPerson3";
+        grid-area: familiaE3; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE3 #namePerson {
+          grid-area: namePerson3;
+          background-color: yellow; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE3 #descriptionPerson {
+          grid-area: descriptionPerson3;
+          background-color: cyan; }
+      .familias .familiasGroup5 .familiaElement5 .familiaE4 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson4 descriptionPerson4";
+        grid-area: familiaE4; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE4 #namePerson {
+          grid-area: namePerson4;
+          background-color: yellow; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE4 #descriptionPerson {
+          grid-area: descriptionPerson4;
+          background-color: cyan; }
+      .familias .familiasGroup5 .familiaElement5 .familiaE5 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson5 descriptionPerson5";
+        grid-area: familiaE5; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE5 #namePerson {
+          grid-area: namePerson5;
+          background-color: yellow; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE5 #descriptionPerson {
+          grid-area: descriptionPerson5;
+          background-color: cyan; }
+  .familias .familiasGroup6 {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 100px 1fr 3fr;
+    grid-template-areas: "familia img element";
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: #214854; }
+    .familias .familiasGroup6 #familia {
+      grid-area: familia; }
+    .familias .familiasGroup6 #img {
+      grid-area: img;
+      width: 100%;
+      margin: auto;
+      display: block;
+      position: relative; }
+    .familias .familiasGroup6 .familiaElement6 {
+      grid-area: element;
+      width: 100wh;
+      height: auto;
+      margin-bottom: 20px;
+      margin-top: 30px;
+      margin-right: 15px;
+      margin-left: 15px;
+      flex: 1;
+      text-align: center;
+      font-size: 13px;
+      display: grid;
+      width: 70px;
+      grid-column-gap: 3px;
+      grid-row-gap: 10px;
+      grid-template-rows: 15vh 15vh 15vh nonevh nonevh;
+      grid-template-columns: 1em;
+      grid-template-areas: "familiaE1" "familiaE2" "familiaE3" "familiaE4" "familiaE5"; }
+      .familias .familiasGroup6 .familiaElement6 .familiaE1 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson1 descriptionPerson1";
+        grid-area: familiaE1; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE1 #namePerson {
+          grid-area: namePerson1;
+          background-color: yellow; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE1 #descriptionPerson {
+          grid-area: descriptionPerson1;
+          background-color: cyan; }
+      .familias .familiasGroup6 .familiaElement6 .familiaE2 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson2 descriptionPerson2";
+        grid-area: familiaE2; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE2 #namePerson {
+          grid-area: namePerson2;
+          background-color: yellow; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE2 #descriptionPerson {
+          grid-area: descriptionPerson2;
+          background-color: cyan; }
+      .familias .familiasGroup6 .familiaElement6 .familiaE3 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson3 descriptionPerson3";
+        grid-area: familiaE3; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE3 #namePerson {
+          grid-area: namePerson3;
+          background-color: yellow; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE3 #descriptionPerson {
+          grid-area: descriptionPerson3;
+          background-color: cyan; }
+      .familias .familiasGroup6 .familiaElement6 .familiaE4 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson4 descriptionPerson4";
+        grid-area: familiaE4; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE4 #namePerson {
+          grid-area: namePerson4;
+          background-color: yellow; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE4 #descriptionPerson {
+          grid-area: descriptionPerson4;
+          background-color: cyan; }
+      .familias .familiasGroup6 .familiaElement6 .familiaE5 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson5 descriptionPerson5";
+        grid-area: familiaE5; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE5 #namePerson {
+          grid-area: namePerson5;
+          background-color: yellow; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE5 #descriptionPerson {
+          grid-area: descriptionPerson5;
+          background-color: cyan; }
+  .familias .familiasGroup7 {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 100px 1fr 3fr;
+    grid-template-areas: "familia img element";
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: #214854; }
+    .familias .familiasGroup7 #familia {
+      grid-area: familia; }
+    .familias .familiasGroup7 #img {
+      grid-area: img;
+      width: 100%;
+      margin: auto;
+      display: block;
+      position: relative; }
+    .familias .familiasGroup7 .familiaElement7 {
+      grid-area: element;
+      width: 100wh;
+      height: auto;
+      margin-bottom: 20px;
+      margin-top: 30px;
+      margin-right: 15px;
+      margin-left: 15px;
+      flex: 1;
+      text-align: center;
+      font-size: 13px;
+      display: grid;
+      width: 70px;
+      grid-column-gap: 3px;
+      grid-row-gap: 10px;
+      grid-template-rows: 15vh 15vh 15vh nonevh nonevh;
+      grid-template-columns: 1em;
+      grid-template-areas: "familiaE1" "familiaE2" "familiaE3" "familiaE4" "familiaE5"; }
+      .familias .familiasGroup7 .familiaElement7 .familiaE1 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson1 descriptionPerson1";
+        grid-area: familiaE1; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE1 #namePerson {
+          grid-area: namePerson1;
+          background-color: yellow; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE1 #descriptionPerson {
+          grid-area: descriptionPerson1;
+          background-color: cyan; }
+      .familias .familiasGroup7 .familiaElement7 .familiaE2 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson2 descriptionPerson2";
+        grid-area: familiaE2; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE2 #namePerson {
+          grid-area: namePerson2;
+          background-color: yellow; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE2 #descriptionPerson {
+          grid-area: descriptionPerson2;
+          background-color: cyan; }
+      .familias .familiasGroup7 .familiaElement7 .familiaE3 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson3 descriptionPerson3";
+        grid-area: familiaE3; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE3 #namePerson {
+          grid-area: namePerson3;
+          background-color: yellow; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE3 #descriptionPerson {
+          grid-area: descriptionPerson3;
+          background-color: cyan; }
+      .familias .familiasGroup7 .familiaElement7 .familiaE4 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson4 descriptionPerson4";
+        grid-area: familiaE4; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE4 #namePerson {
+          grid-area: namePerson4;
+          background-color: yellow; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE4 #descriptionPerson {
+          grid-area: descriptionPerson4;
+          background-color: cyan; }
+      .familias .familiasGroup7 .familiaElement7 .familiaE5 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson5 descriptionPerson5";
+        grid-area: familiaE5; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE5 #namePerson {
+          grid-area: namePerson5;
+          background-color: yellow; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE5 #descriptionPerson {
+          grid-area: descriptionPerson5;
+          background-color: cyan; }
+  .familias .familiasGroup8 {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 100px 1fr 3fr;
+    grid-template-areas: "familia img element";
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: #214854; }
+    .familias .familiasGroup8 #familia {
+      grid-area: familia; }
+    .familias .familiasGroup8 #img {
+      grid-area: img;
+      width: 100%;
+      margin: auto;
+      display: block;
+      position: relative; }
+    .familias .familiasGroup8 .familiaElement8 {
+      grid-area: element;
+      width: 100wh;
+      height: auto;
+      margin-bottom: 20px;
+      margin-top: 30px;
+      margin-right: 15px;
+      margin-left: 15px;
+      flex: 1;
+      text-align: center;
+      font-size: 13px;
+      display: grid;
+      width: 70px;
+      grid-column-gap: 3px;
+      grid-row-gap: 10px;
+      grid-template-rows: 15vh 15vh 15vh nonevh nonevh;
+      grid-template-columns: 1em;
+      grid-template-areas: "familiaE1" "familiaE2" "familiaE3" "familiaE4" "familiaE5"; }
+      .familias .familiasGroup8 .familiaElement8 .familiaE1 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson1 descriptionPerson1";
+        grid-area: familiaE1; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE1 #namePerson {
+          grid-area: namePerson1;
+          background-color: yellow; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE1 #descriptionPerson {
+          grid-area: descriptionPerson1;
+          background-color: cyan; }
+      .familias .familiasGroup8 .familiaElement8 .familiaE2 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson2 descriptionPerson2";
+        grid-area: familiaE2; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE2 #namePerson {
+          grid-area: namePerson2;
+          background-color: yellow; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE2 #descriptionPerson {
+          grid-area: descriptionPerson2;
+          background-color: cyan; }
+      .familias .familiasGroup8 .familiaElement8 .familiaE3 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson3 descriptionPerson3";
+        grid-area: familiaE3; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE3 #namePerson {
+          grid-area: namePerson3;
+          background-color: yellow; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE3 #descriptionPerson {
+          grid-area: descriptionPerson3;
+          background-color: cyan; }
+      .familias .familiasGroup8 .familiaElement8 .familiaE4 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson4 descriptionPerson4";
+        grid-area: familiaE4; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE4 #namePerson {
+          grid-area: namePerson4;
+          background-color: yellow; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE4 #descriptionPerson {
+          grid-area: descriptionPerson4;
+          background-color: cyan; }
+      .familias .familiasGroup8 .familiaElement8 .familiaE5 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson5 descriptionPerson5";
+        grid-area: familiaE5; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE5 #namePerson {
+          grid-area: namePerson5;
+          background-color: yellow; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE5 #descriptionPerson {
+          grid-area: descriptionPerson5;
+          background-color: cyan; }
+  .familias .familiasGroup9 {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 100px 1fr 3fr;
+    grid-template-areas: "familia img element";
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: #214854; }
+    .familias .familiasGroup9 #familia {
+      grid-area: familia; }
+    .familias .familiasGroup9 #img {
+      grid-area: img;
+      width: 100%;
+      margin: auto;
+      display: block;
+      position: relative; }
+    .familias .familiasGroup9 .familiaElement9 {
+      grid-area: element;
+      width: 100wh;
+      height: auto;
+      margin-bottom: 20px;
+      margin-top: 30px;
+      margin-right: 15px;
+      margin-left: 15px;
+      flex: 1;
+      text-align: center;
+      font-size: 13px;
+      display: grid;
+      width: 70px;
+      grid-column-gap: 3px;
+      grid-row-gap: 10px;
+      grid-template-rows: 15vh 0vh 0vh 0vh nonevh;
+      grid-template-columns: 1em;
+      grid-template-areas: "familiaE1" "familiaE2" "familiaE3" "familiaE4" "familiaE5"; }
+      .familias .familiasGroup9 .familiaElement9 .familiaE1 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson1 descriptionPerson1";
+        grid-area: familiaE1; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE1 #namePerson {
+          grid-area: namePerson1;
+          background-color: yellow; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE1 #descriptionPerson {
+          grid-area: descriptionPerson1;
+          background-color: cyan; }
+      .familias .familiasGroup9 .familiaElement9 .familiaE2 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson2 descriptionPerson2";
+        grid-area: familiaE2; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE2 #namePerson {
+          grid-area: namePerson2;
+          background-color: yellow; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE2 #descriptionPerson {
+          grid-area: descriptionPerson2;
+          background-color: cyan; }
+      .familias .familiasGroup9 .familiaElement9 .familiaE3 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson3 descriptionPerson3";
+        grid-area: familiaE3; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE3 #namePerson {
+          grid-area: namePerson3;
+          background-color: yellow; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE3 #descriptionPerson {
+          grid-area: descriptionPerson3;
+          background-color: cyan; }
+      .familias .familiasGroup9 .familiaElement9 .familiaE4 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson4 descriptionPerson4";
+        grid-area: familiaE4; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE4 #namePerson {
+          grid-area: namePerson4;
+          background-color: yellow; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE4 #descriptionPerson {
+          grid-area: descriptionPerson4;
+          background-color: cyan; }
+      .familias .familiasGroup9 .familiaElement9 .familiaE5 {
+        display: grid;
+        grid-template-columns: 100px 600px;
+        text-align: justify;
+        grid-template-areas: "namePerson5 descriptionPerson5";
+        grid-area: familiaE5; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE5 #namePerson {
+          grid-area: namePerson5;
+          background-color: yellow; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE5 #descriptionPerson {
+          grid-area: descriptionPerson5;
+          background-color: cyan; }
+
+/* .familias img{
+    display: block;
+    margin: auto;
+    width:30%;
+    position: relative;
+} */
+.familias h4 {
+  color: burlywood;
+  text-align: center; }
+
+.familias h3 {
+  text-align: center; }
+
+@media only screen and (max-width: 1100px) {
+  .familias .familiasGroup1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .familias .familiasGroup1 .familiaElement1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup1 .familiaElement1 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement1 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement1 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement1 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement1 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup1 .familiaElement2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup1 .familiaElement2 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement2 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement2 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement2 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement2 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement2 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement2 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement2 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement2 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement2 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup1 .familiaElement3 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup1 .familiaElement3 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement3 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement3 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement3 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement3 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement3 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement3 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement3 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement3 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement3 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup1 .familiaElement4 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup1 .familiaElement4 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement4 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement4 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement4 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement4 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement4 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement4 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement4 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement4 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement4 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup1 .familiaElement5 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup1 .familiaElement5 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement5 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement5 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement5 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement5 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement5 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement5 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement5 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement5 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement5 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup1 .familiaElement6 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup1 .familiaElement6 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement6 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement6 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement6 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement6 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement6 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement6 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement6 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement6 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement6 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup1 .familiaElement7 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup1 .familiaElement7 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement7 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement7 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement7 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement7 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement7 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement7 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement7 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement7 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement7 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup1 .familiaElement8 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup1 .familiaElement8 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement8 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement8 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement8 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement8 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement8 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement8 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement8 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement8 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement8 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup1 .familiaElement9 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup1 .familiaElement9 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement9 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement9 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement9 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement9 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement9 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement9 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement9 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup1 .familiaElement9 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup1 .familiaElement9 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+  .familias .familiasGroup2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .familias .familiasGroup2 .familiaElement1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup2 .familiaElement1 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement1 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement1 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement1 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement1 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement1 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement1 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement1 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement1 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement1 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup2 .familiaElement2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup2 .familiaElement2 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement2 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement2 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement2 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement2 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup2 .familiaElement3 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup2 .familiaElement3 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement3 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement3 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement3 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement3 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement3 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement3 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement3 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement3 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement3 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup2 .familiaElement4 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup2 .familiaElement4 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement4 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement4 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement4 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement4 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement4 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement4 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement4 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement4 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement4 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup2 .familiaElement5 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup2 .familiaElement5 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement5 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement5 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement5 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement5 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement5 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement5 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement5 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement5 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement5 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup2 .familiaElement6 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup2 .familiaElement6 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement6 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement6 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement6 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement6 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement6 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement6 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement6 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement6 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement6 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup2 .familiaElement7 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup2 .familiaElement7 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement7 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement7 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement7 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement7 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement7 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement7 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement7 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement7 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement7 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup2 .familiaElement8 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup2 .familiaElement8 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement8 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement8 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement8 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement8 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement8 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement8 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement8 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement8 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement8 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup2 .familiaElement9 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup2 .familiaElement9 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement9 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement9 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement9 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement9 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement9 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement9 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement9 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup2 .familiaElement9 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup2 .familiaElement9 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+  .familias .familiasGroup3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .familias .familiasGroup3 .familiaElement1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup3 .familiaElement1 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement1 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement1 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement1 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement1 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement1 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement1 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement1 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement1 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement1 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup3 .familiaElement2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup3 .familiaElement2 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement2 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement2 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement2 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement2 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement2 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement2 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement2 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement2 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement2 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup3 .familiaElement3 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup3 .familiaElement3 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement3 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement3 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement3 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement3 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup3 .familiaElement4 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup3 .familiaElement4 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement4 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement4 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement4 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement4 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement4 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement4 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement4 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement4 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement4 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup3 .familiaElement5 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup3 .familiaElement5 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement5 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement5 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement5 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement5 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement5 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement5 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement5 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement5 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement5 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup3 .familiaElement6 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup3 .familiaElement6 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement6 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement6 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement6 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement6 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement6 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement6 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement6 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement6 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement6 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup3 .familiaElement7 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup3 .familiaElement7 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement7 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement7 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement7 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement7 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement7 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement7 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement7 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement7 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement7 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup3 .familiaElement8 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup3 .familiaElement8 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement8 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement8 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement8 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement8 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement8 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement8 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement8 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement8 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement8 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup3 .familiaElement9 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup3 .familiaElement9 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement9 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement9 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement9 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement9 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement9 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement9 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement9 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup3 .familiaElement9 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup3 .familiaElement9 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+  .familias .familiasGroup4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .familias .familiasGroup4 .familiaElement1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup4 .familiaElement1 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement1 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement1 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement1 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement1 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement1 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement1 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement1 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement1 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement1 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup4 .familiaElement2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup4 .familiaElement2 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement2 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement2 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement2 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement2 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement2 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement2 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement2 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement2 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement2 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup4 .familiaElement3 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup4 .familiaElement3 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement3 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement3 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement3 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement3 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement3 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement3 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement3 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement3 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement3 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup4 .familiaElement4 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup4 .familiaElement4 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement4 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement4 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement4 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement4 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup4 .familiaElement5 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup4 .familiaElement5 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement5 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement5 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement5 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement5 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement5 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement5 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement5 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement5 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement5 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup4 .familiaElement6 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup4 .familiaElement6 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement6 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement6 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement6 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement6 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement6 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement6 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement6 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement6 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement6 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup4 .familiaElement7 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup4 .familiaElement7 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement7 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement7 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement7 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement7 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement7 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement7 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement7 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement7 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement7 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup4 .familiaElement8 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup4 .familiaElement8 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement8 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement8 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement8 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement8 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement8 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement8 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement8 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement8 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement8 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup4 .familiaElement9 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup4 .familiaElement9 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement9 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement9 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement9 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement9 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement9 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement9 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement9 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup4 .familiaElement9 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup4 .familiaElement9 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+  .familias .familiasGroup5 {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .familias .familiasGroup5 .familiaElement1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup5 .familiaElement1 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement1 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement1 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement1 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement1 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement1 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement1 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement1 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement1 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement1 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup5 .familiaElement2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup5 .familiaElement2 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement2 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement2 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement2 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement2 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement2 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement2 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement2 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement2 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement2 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup5 .familiaElement3 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup5 .familiaElement3 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement3 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement3 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement3 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement3 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement3 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement3 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement3 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement3 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement3 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup5 .familiaElement4 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup5 .familiaElement4 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement4 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement4 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement4 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement4 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement4 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement4 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement4 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement4 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement4 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup5 .familiaElement5 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup5 .familiaElement5 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement5 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement5 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement5 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement5 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup5 .familiaElement6 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup5 .familiaElement6 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement6 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement6 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement6 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement6 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement6 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement6 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement6 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement6 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement6 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup5 .familiaElement7 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup5 .familiaElement7 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement7 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement7 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement7 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement7 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement7 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement7 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement7 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement7 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement7 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup5 .familiaElement8 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup5 .familiaElement8 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement8 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement8 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement8 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement8 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement8 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement8 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement8 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement8 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement8 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup5 .familiaElement9 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup5 .familiaElement9 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement9 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement9 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement9 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement9 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement9 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement9 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement9 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup5 .familiaElement9 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup5 .familiaElement9 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+  .familias .familiasGroup6 {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .familias .familiasGroup6 .familiaElement1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup6 .familiaElement1 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement1 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement1 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement1 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement1 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement1 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement1 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement1 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement1 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement1 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup6 .familiaElement2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup6 .familiaElement2 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement2 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement2 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement2 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement2 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement2 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement2 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement2 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement2 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement2 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup6 .familiaElement3 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup6 .familiaElement3 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement3 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement3 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement3 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement3 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement3 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement3 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement3 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement3 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement3 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup6 .familiaElement4 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup6 .familiaElement4 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement4 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement4 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement4 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement4 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement4 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement4 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement4 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement4 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement4 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup6 .familiaElement5 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup6 .familiaElement5 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement5 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement5 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement5 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement5 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement5 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement5 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement5 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement5 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement5 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup6 .familiaElement6 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup6 .familiaElement6 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement6 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement6 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement6 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement6 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup6 .familiaElement7 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup6 .familiaElement7 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement7 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement7 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement7 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement7 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement7 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement7 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement7 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement7 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement7 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup6 .familiaElement8 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup6 .familiaElement8 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement8 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement8 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement8 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement8 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement8 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement8 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement8 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement8 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement8 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup6 .familiaElement9 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup6 .familiaElement9 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement9 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement9 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement9 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement9 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement9 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement9 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement9 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup6 .familiaElement9 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup6 .familiaElement9 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+  .familias .familiasGroup7 {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .familias .familiasGroup7 .familiaElement1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup7 .familiaElement1 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement1 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement1 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement1 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement1 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement1 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement1 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement1 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement1 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement1 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup7 .familiaElement2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup7 .familiaElement2 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement2 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement2 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement2 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement2 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement2 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement2 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement2 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement2 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement2 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup7 .familiaElement3 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup7 .familiaElement3 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement3 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement3 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement3 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement3 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement3 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement3 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement3 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement3 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement3 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup7 .familiaElement4 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup7 .familiaElement4 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement4 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement4 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement4 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement4 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement4 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement4 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement4 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement4 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement4 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup7 .familiaElement5 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup7 .familiaElement5 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement5 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement5 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement5 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement5 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement5 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement5 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement5 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement5 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement5 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup7 .familiaElement6 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup7 .familiaElement6 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement6 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement6 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement6 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement6 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement6 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement6 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement6 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement6 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement6 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup7 .familiaElement7 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup7 .familiaElement7 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement7 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement7 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement7 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement7 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup7 .familiaElement8 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup7 .familiaElement8 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement8 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement8 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement8 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement8 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement8 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement8 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement8 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement8 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement8 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup7 .familiaElement9 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup7 .familiaElement9 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement9 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement9 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement9 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement9 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement9 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement9 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement9 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup7 .familiaElement9 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup7 .familiaElement9 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+  .familias .familiasGroup8 {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .familias .familiasGroup8 .familiaElement1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup8 .familiaElement1 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement1 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement1 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement1 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement1 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement1 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement1 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement1 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement1 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement1 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup8 .familiaElement2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup8 .familiaElement2 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement2 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement2 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement2 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement2 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement2 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement2 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement2 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement2 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement2 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup8 .familiaElement3 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup8 .familiaElement3 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement3 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement3 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement3 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement3 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement3 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement3 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement3 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement3 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement3 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup8 .familiaElement4 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup8 .familiaElement4 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement4 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement4 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement4 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement4 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement4 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement4 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement4 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement4 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement4 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup8 .familiaElement5 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup8 .familiaElement5 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement5 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement5 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement5 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement5 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement5 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement5 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement5 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement5 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement5 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup8 .familiaElement6 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup8 .familiaElement6 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement6 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement6 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement6 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement6 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement6 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement6 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement6 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement6 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement6 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup8 .familiaElement7 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup8 .familiaElement7 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement7 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement7 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement7 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement7 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement7 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement7 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement7 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement7 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement7 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup8 .familiaElement8 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup8 .familiaElement8 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement8 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement8 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement8 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement8 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup8 .familiaElement9 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup8 .familiaElement9 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement9 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement9 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement9 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement9 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement9 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement9 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement9 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup8 .familiaElement9 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup8 .familiaElement9 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+  .familias .familiasGroup9 {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .familias .familiasGroup9 .familiaElement1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup9 .familiaElement1 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement1 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement1 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement1 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement1 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement1 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement1 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement1 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement1 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement1 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup9 .familiaElement2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup9 .familiaElement2 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement2 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement2 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement2 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement2 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement2 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement2 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement2 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement2 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement2 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup9 .familiaElement3 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup9 .familiaElement3 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement3 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement3 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement3 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement3 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement3 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement3 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement3 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement3 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement3 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup9 .familiaElement4 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup9 .familiaElement4 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement4 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement4 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement4 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement4 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement4 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement4 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement4 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement4 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement4 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup9 .familiaElement5 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup9 .familiaElement5 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement5 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement5 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement5 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement5 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement5 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement5 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement5 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement5 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement5 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup9 .familiaElement6 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup9 .familiaElement6 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement6 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement6 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement6 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement6 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement6 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement6 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement6 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement6 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement6 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup9 .familiaElement7 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup9 .familiaElement7 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement7 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement7 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement7 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement7 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement7 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement7 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement7 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement7 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement7 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup9 .familiaElement8 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup9 .familiaElement8 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement8 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement8 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement8 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement8 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement8 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement8 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement8 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement8 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement8 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; }
+    .familias .familiasGroup9 .familiaElement9 {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .familias .familiasGroup9 .familiaElement9 .familiaE1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE1 #descriptionPerson1 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement9 .familiaE2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE2 #descriptionPerson2 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement9 .familiaE3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE3 #descriptionPerson3 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement9 .familiaE4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE4 #descriptionPerson4 {
+          width: 100%;
+          text-align: center; }
+      .familias .familiasGroup9 .familiaElement9 .familiaE5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE5 #descriptionPerson5 {
+          width: 100%;
+          text-align: center; } }
+
+.sectionMapa img {
+  display: block;
+  margin: auto;
+  width: 150px;
+  position: relative; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #0c262f;
+  color: white;
+  font-family: "Arial", cursive; }
+
+/* clases */
+main {
+  /* Bloques adicionales */ }
+  main .tituloPrincipal {
+    display: flex;
+    justify-items: center;
+    width: 40%;
+    height: 150px;
+    font-size: 1em;
+    border-bottom: solid red;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: yellow;
+    position: relative; }
+    main .tituloPrincipal .text {
+      font-size: 100%; }
+    main .tituloPrincipal .tituloPrincipal__trapezoid {
+      margin: auto;
+      /* width: 288px;
+            height: 150px; */
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: #d1d1d1;
+      transform: perspective(6px) rotateX(179deg); }
+  main section .sectionMain__personajes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    main section .sectionMain__personajes .sectionMain__personajes__Element {
+      width: 200px;
+      height: auto;
+      margin-top: 10px;
+      margin-right: 10px;
+      display: inline-block;
+      font-size: 10px;
+      flex: 1; }
+      main section .sectionMain__personajes .sectionMain__personajes__Element p {
+        text-align: center; }
+    main section .sectionMain__personajes .sectionMain__personajes__Element:hover ~ .sectionMain__personajes__Element {
+      transform: translate3d(100px, 0, 0); }
+    main section .sectionMain__personajes .sectionMain__personajes__Element:hover:hover.sectionMain__personajes__Element {
+      opacity: 0.3; }
+    main section .sectionMain__personajes .sectionMain__personajes:hover .sectionMain__personajes__Element:hover {
+      transform: scale(1.5);
+      opacity: 1;
+      background-color: #d1d1d1;
+      border-radius: 20px;
+      text-align: center; }
+  main .bloque5 {
+    margin: auto;
+    text-align: center; }
+    main .bloque5 .bloque5__titulo {
+      color: green; }
+    main .bloque5 .bloque5__textos .bloque5__textos--pink {
+      font-size: 10px;
+      color: pink; }
+    main .bloque5 .bloque5__textos .bloque5__textos--navy {
+      color: navy;
+      font-size: 30px; }
+  main .bloque6 {
+    margin: auto;
+    text-align: center; }
+    main .bloque6 .bloque6__titulo {
+      font-size: 15px;
+      color: honeydew; }
+    main .bloque6 .bloque6__texto {
+      color: red; }
+  main .bloque7 {
+    margin: auto;
+    text-align: center; }
+    main .bloque7 .bloque7__titulo {
+      color: #e6da8e; }
+    main .bloque7 .bloque7__texto {
+      color: lime; }
+  main .bloque8 {
+    margin: auto;
+    text-align: center; }
+    main .bloque8 .bloque8__titulo {
+      color: #403ee6; }
+    main .bloque8 .bloque8__texto {
+      height: 180px;
+      color: #852d2d; }
+
+/* selectores */
+ul {
+  list-style: none;
+  display: inline; }
+
+h1 {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-family: "Rock Salt", cursive; }
+
+h2 {
+  z-index: 3;
+  position: relative;
+  padding-top: 20px;
+  color: crimson;
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-family: "Rock Salt", cursive; }
+
+h3 {
+  color: #FFA24F;
+  font-size: 15px;
+  font-family: "Rock Salt", cursive;
+  margin: auto; }
+
+a {
+  color: rgba(18, 55, 51, 0.727);
+  text-decoration: none; }
+
+@media only screen and (max-width: 900px) {
+  .personajes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media only screen and (max-width: 800px) {
+  main .tituloPrincipal {
+    display: flex;
+    justify-items: center;
+    width: 40%;
+    height: 150px;
+    font-size: 1em;
+    border-bottom: solid red;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: yellow;
+    position: relative; }
+    main .tituloPrincipal .text {
+      font-size: 80%; }
+    main .tituloPrincipal .tituloPrincipal__trapezoid {
+      margin: auto;
+      /* width: 288px;
+                height: 150px; */
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: #d1d1d1;
+      transform: perspective(6px) rotateX(179deg); } }
+
+@media only screen and (max-width: 600px) {
+  main .tituloPrincipal {
+    display: flex;
+    justify-items: center;
+    width: 40%;
+    height: 150px;
+    font-size: 1em;
+    border-bottom: solid red;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: yellow;
+    position: relative; }
+    main .tituloPrincipal .text {
+      font-size: 50%; }
+    main .tituloPrincipal .tituloPrincipal__trapezoid {
+      margin: auto;
+      /* width: 288px;
+                height: 150px; */
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: #d1d1d1;
+      transform: perspective(6px) rotateX(179deg); } }

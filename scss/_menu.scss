@@ -1,0 +1,109 @@
+header{
+    background-color: $bgcolorThird;
+    font-weight: bold;   
+    .menu{
+        text-align: center;    
+        font-size: 12px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        
+        .menu__titulo{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        nav{
+           
+            .menu__Element{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: nowrap;
+                color:$color-Link;
+                font-family: $font-Simpson; 
+                    
+                    
+                
+                ul{
+                    display: none;
+                    background-color: rgb(209, 209, 209);
+                }
+                
+                li{
+                    display: block;
+                    &:hover{
+                        ul{
+                            display: block;
+                            cursor: pointer; 
+                        };
+                    }
+                    
+                }  
+                    
+                     
+                    
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 900px)
+    {
+        header{
+            background-color: $bgcolorThird;
+            font-weight: bold;   
+            .menu{
+                text-align: center;    
+                font-size: 12px;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+                
+                .menu__titulo{
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                }
+                nav{
+                   
+                    .menu__Element{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                        color:$color-Link;
+                        font-family: $font-Simpson;
+                        padding: 0;
+                        color: white;
+                       
+                        ul{
+                            display: none;
+                            background-color: rgb(209, 209, 209);
+                            
+                        }
+                        
+                        li{
+                            display: block;
+                            &:hover{
+                                ul{
+                                    display: block;
+                                    cursor: pointer; 
+                                    
+                                };
+                            }
+                            background-color: $bgcolorSecond;
+                            width: 100%;
+                            margin: auto;  
+                            height: 30px; 
+                            font-weight: normal;
+                            
+                        }  
+                        a{
+                            color: white;
+                            font-weight: normal;
+                        }    
+                             
+                            
+                        }
+                    }
+                }
+            }
+        
+    }

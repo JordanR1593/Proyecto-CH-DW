@@ -1,0 +1,377 @@
+@mixin familiaGroup($bgcaja) {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 100px 1fr 3fr;
+    grid-template-areas: 
+    "familia img element";
+    margin-bottom: 20px;
+    align-items: center;
+    #familia{
+        grid-area: familia;
+    }
+    #img{
+        grid-area: img;
+        width:100%;
+        margin: auto;
+        display: block;
+        position: relative;
+    }
+    background-color: $bgcaja;
+}
+@mixin familiaE ($num){
+    display: grid;
+    grid-template-columns: 100px 600px;
+    text-align: justify;
+    grid-template-areas: 
+    /* "namePerson descriptionPerson" */
+    "namePerson"+$num+" descriptionPerson"+$num;
+    grid-area: familiaE+$num;
+    #namePerson {
+        grid-area: namePerson+$num;
+        background-color: yellow;
+    }
+    #descriptionPerson{
+        grid-area: descriptionPerson+$num;
+        background-color: cyan;
+    }
+}
+
+@mixin familiaElement($f1,$f2,$f3,$f4,$f5){
+    grid-area: element;
+            width: 100wh;
+            height: auto;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            margin-right:15px ;
+            margin-left: 15px;
+            flex:1;
+            text-align: center;
+           
+            font-size: 13px;
+            display: grid;
+            width: 70px;
+            grid-column-gap:3px;
+            grid-row-gap:10px;
+            grid-template-rows: $f1+vh $f2+vh $f3+vh $f4+vh $f5+vh;
+            grid-template-columns: 1em;
+            grid-template-areas: 
+           "familiaE1"
+           "familiaE2"
+           "familiaE3"
+           "familiaE4"
+           "familiaE5";
+            
+}
+
+
+
+
+.familias{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    .familiasGroup1{
+       
+        @include familiaGroup($bgcolorSecond);
+       
+        .familiaElement1{
+            @include familiaElement(15,15,15,15,15);
+           
+            .familiaE1{
+                
+                @include familiaE(1);
+            }
+            .familiaE2{
+                @include familiaE(2);
+            }
+            .familiaE3{
+                @include familiaE(3);
+            }
+            .familiaE4{
+                @include familiaE(4);
+            }
+            .familiaE5{
+                @include familiaE(5);
+            }
+
+               
+            
+        }
+    }
+        .familiasGroup2{
+       
+            @include familiaGroup($bgcolorSecond);
+           
+            .familiaElement2{
+                @include familiaElement(15,15,15,15,none);
+               
+                .familiaE1{
+                    
+                    @include familiaE(1);
+                }
+                .familiaE2{
+                    @include familiaE(2);
+                }
+                .familiaE3{
+                    @include familiaE(3);
+                }
+                .familiaE4{
+                    @include familiaE(4);
+                }
+                .familiaE5{
+                    @include familiaE(5);
+                }
+    
+                   
+                
+            }
+        }
+        .familiasGroup3{
+       
+            @include familiaGroup($bgcolorSecond);
+           
+            .familiaElement3{
+                @include familiaElement(15,15,15,15,none);
+               
+                .familiaE1{
+                    
+                    @include familiaE(1);
+                }
+                .familiaE2{
+                    @include familiaE(2);
+                }
+                .familiaE3{
+                    @include familiaE(3);
+                }
+                .familiaE4{
+                    @include familiaE(4);
+                }
+                .familiaE5{
+                    @include familiaE(5);
+                }
+    
+                   
+                
+            }
+        }
+        .familiasGroup4{
+       
+            @include familiaGroup($bgcolorSecond);
+           
+            .familiaElement4{
+                @include familiaElement(15,15,15,15,none);
+               
+                .familiaE1{
+                    
+                    @include familiaE(1);
+                }
+                .familiaE2{
+                    @include familiaE(2);
+                }
+                .familiaE3{
+                    @include familiaE(3);
+                }
+                .familiaE4{
+                    @include familiaE(4);
+                }
+                .familiaE5{
+                    @include familiaE(5);
+                }
+    
+                   
+                
+            }
+        }
+        .familiasGroup5{
+       
+            @include familiaGroup($bgcolorSecond);
+           
+            .familiaElement5{
+                @include familiaElement(15,15,15,none,none);
+               
+                .familiaE1{
+                    
+                    @include familiaE(1);
+                }
+                .familiaE2{
+                    @include familiaE(2);
+                }
+                .familiaE3{
+                    @include familiaE(3);
+                }
+                .familiaE4{
+                    @include familiaE(4);
+                }
+                .familiaE5{
+                    @include familiaE(5);
+                }
+    
+                   
+                
+            }
+        }
+        .familiasGroup6{
+       
+            @include familiaGroup($bgcolorSecond);
+           
+            .familiaElement6{
+                @include familiaElement(15,15,15,none,none);
+               
+                .familiaE1{
+                    
+                    @include familiaE(1);
+                }
+                .familiaE2{
+                    @include familiaE(2);
+                }
+                .familiaE3{
+                    @include familiaE(3);
+                }
+                .familiaE4{
+                    @include familiaE(4);
+                }
+                .familiaE5{
+                    @include familiaE(5);
+                }
+    
+                   
+                
+            }
+        }
+        .familiasGroup7{
+       
+            @include familiaGroup($bgcolorSecond);
+           
+            .familiaElement7{
+                @include familiaElement(15,15,15,none,none);
+               
+                .familiaE1{
+                    
+                    @include familiaE(1);
+                }
+                .familiaE2{
+                    @include familiaE(2);
+                }
+                .familiaE3{
+                    @include familiaE(3);
+                }
+                .familiaE4{
+                    @include familiaE(4);
+                }
+                .familiaE5{
+                    @include familiaE(5);
+                }
+    
+                   
+                
+            }
+        }
+        .familiasGroup8{
+       
+            @include familiaGroup($bgcolorSecond);
+           
+            .familiaElement8{
+                @include familiaElement(15,15,15,none,none);
+               
+                .familiaE1{
+                    
+                    @include familiaE(1);
+                }
+                .familiaE2{
+                    @include familiaE(2);
+                }
+                .familiaE3{
+                    @include familiaE(3);
+                }
+                .familiaE4{
+                    @include familiaE(4);
+                }
+                .familiaE5{
+                    @include familiaE(5);
+                }
+    
+                   
+                
+            }
+        }
+        .familiasGroup9{
+       
+            @include familiaGroup($bgcolorSecond);
+           
+            .familiaElement9{
+                @include familiaElement(15,0,0,0,none);
+               
+                .familiaE1{
+                    
+                    @include familiaE(1);
+                }
+                .familiaE2{
+                    @include familiaE(2);
+                }
+                .familiaE3{
+                    @include familiaE(3);
+                }
+                .familiaE4{
+                    @include familiaE(4);
+                }
+                .familiaE5{
+                    @include familiaE(5);
+                }
+    
+                   
+                
+            }
+        }
+}
+
+/* .familias img{
+    display: block;
+    margin: auto;
+    width:30%;
+    position: relative;
+} */
+
+.familias h4{
+    color: burlywood;
+    text-align: center;
+}
+.familias h3{
+    text-align: center;
+}
+@media only screen and (max-width: 1100px)
+ {
+     .familias{
+         
+         @for $i from 1 through 9{
+             .familiasGroup#{$i}{
+                 width: 100%;
+                display: flex;
+                flex-direction: column;
+                @for $i from 1 through 9{
+                    .familiaElement#{$i}{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        @for $i from 1 through 5{
+                            .familiaE#{$i}{
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                #descriptionPerson#{$i}{
+                                    width: 100%;
+                                    text-align: center;
+                                }
+                                
+                            }
+                           
+                    }
+                }
+            }   
+         }
+     }
+     
+    }
+}

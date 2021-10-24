@@ -1,0 +1,294 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: rgb(32, 36, 36);
+    color: white;
+    font-family: 'Rock Salt', cursive; ;
+}
+a{
+    
+   color: turquoise;
+    text-decoration: none;
+    
+}
+h1{
+    z-index: 2 ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: block;
+    width: 288px;
+    height: 150px;
+    
+}
+
+h2{
+    z-index: 3 ;
+    position: relative;
+    padding-top: 20px;
+    color: crimson;
+    margin-top:20px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: normal;
+    
+}
+h3{
+    color: yellowgreen;
+}
+
+.tituloPrincipal {
+    
+    
+    width: 30%;
+    height: 150px;
+    border-bottom: solid red;
+    text-align: center;
+    margin: auto;
+    
+    
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: yellow;
+    position: relative;
+    
+}
+.tituloPrincipal__trapezoid {
+    
+    
+    margin: auto;
+    width: 288px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(209, 209, 209);
+    transform: perspective(6px) rotateX(179deg);
+    
+    
+   
+    
+    
+}
+
+ul{
+    list-style: none;
+    display: inline;
+    
+}
+
+.menu{
+    text-align: center;    
+    font-size: 12px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.menuTitulo{
+    font-size: 20px;
+}
+.menuElement ul{
+    
+    color:turquoise;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.menuElement ul ul {
+    display: none;
+    background-color: rgb(209, 209, 209, 0.2);
+    
+    
+}
+ul li {
+    display: block;
+}
+ul li:hover ul{
+    display: block;
+    cursor: pointer;
+    
+
+}
+.personajes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.personajeElement{
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right:10px ;
+    display: inline-block;
+    font-size: 10px;
+    flex:1;
+}
+.familiaElement{
+    width: 100wh;
+    height: auto;
+    margin-bottom: 70px;
+    margin-top: 30px;
+    margin-right:15px ;
+    margin-left: 15px;
+   /* display: flex;
+   justify-content: center;
+   align-items: stretch ; */
+   flex:1;
+   text-align: center;
+   
+    font-size: 10px;
+   /*  display: grid;
+    width: 70px;
+    grid-template-areas: 
+   "namePerson1 descriptionPerson1"
+   "namePerson2 descriptionPerson2"
+   "namePerson3 descriptionPerson3"
+   "namePerson4 descriptionPerson4"
+   "namePerson5 descriptionPerson5";
+    grid-column-gap:1px;
+    grid-template-rows: 25px 25px 25px 25px 25px;
+    grid-template-columns: 50px 600px; */
+      
+}
+.familiaE{
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+   "namePerson1 descriptionPerson1"
+   "namePerson2 descriptionPerson2"
+   "namePerson3 descriptionPerson3"
+   "namePerson4 descriptionPerson4"
+   "namePerson5 descriptionPerson5";
+    grid-column-gap:1px;
+    grid-template-rows: 25px 25px 25px 25px 25px;
+    grid-template-columns: 50px 600px;
+
+}
+#namePerson1 {
+    grid-area: namePerson1;
+}
+#descriptionPerson1{
+    grid-area: descriptionPerson1;
+}
+#namePerson2 {
+    grid-area: namePerson2;
+}
+#descriptionPerson2{
+    grid-area: descriptionPerson2;
+}
+#namePerson3 {
+    grid-area: namePerson3;
+}
+#descriptionPerson3{
+    grid-area: descriptionPerson3;
+}
+#namePerson4 {
+    grid-area: namePerson4;
+}
+#descriptionPerson4{
+    grid-area: descriptionPerson4;
+}
+#namePerson5 {
+    grid-area: namePerson5;
+}
+#descriptionPerson5{
+    grid-area: descriptionPerson5;
+}
+
+.familias img{
+    display: block;
+    margin: auto;
+    width:30%;
+    position: relative;
+}
+
+.familias h4{
+    color: burlywood;
+    text-align: center;
+}
+.familias h3{
+    text-align: center;
+}
+.familias{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.sectionMapa img{
+    display: block;
+    margin: auto;
+    width:150px;
+    position: relative;
+}
+
+ th{
+     background-color: teal;
+     color:plum;
+ }
+ td{
+     background-color: powderblue;
+     color: black;
+ }
+ 
+  .sectionMain{
+      position: relative;
+      padding: 20px;
+      
+  }
+  .footer1{
+      display: flex;
+      justify-content: space-around;
+      font-size: 15px;
+  }
+  .redesSociales{
+      display: flex;
+      justify-content: space-around;
+      filter: invert(0.4) sepia(1) hue-rotate(50deg);
+      padding: 20px 300px;
+  }
+  .sectionMain p {
+      margin-bottom: 30px;
+      font-size: 10px;
+      color:rosybrown;
+  }
+  .sectionMain h4{
+    color: burlywood;
+    text-align: center;
+  }
+  table{
+      margin: auto;
+  }
+  .familiasGroup{
+      display: grid;
+      grid-template-columns: 100px 1fr 3fr;
+      margin-bottom: 20px;
+      align-items: center;
+  }
+  @media only screen and (max-width: 900px)
+  {
+      .personajes {
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+      }
+  }
+  @media only screen and (max-width: 600px)
+  {
+      .personajes {
+        display: grid;
+        grid-template-columns:1fr;
+        justify-items: center;
+        margin: auto;
+      }
+  }
+  
