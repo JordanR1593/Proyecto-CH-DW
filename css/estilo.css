@@ -29,6 +29,7 @@ footer {
       padding: 0; } }
 
 header {
+  height: 10%;
   background-color: #3f807e;
   font-weight: bold;
   display: grid;
