@@ -104,60 +104,7 @@ main{
         }
     }
     /* Bloques adicionales */
-.bloque5{
-    margin: auto;
-    text-align: center;
-    .bloque5__titulo{
-        color: green;
-        
-    }
-    .bloque5__textos{
-        $fontSize:20px;
-        .bloque5__textos--pink{
-            
-            font-size: $fontSize/2;
-            color: pink;
-        }
-        .bloque5__textos--navy{
-            color: navy;
-            font-size: $fontSize*2-10px;
-        }
-    }
-}
-.bloque6{
-    margin: auto;
-    text-align: center;
-    $fontSize2:30px;
-    .bloque6__titulo{
-        font-size: $fontSize2*0.5;
-        color: honeydew;
-    }
-    .bloque6__texto{
-        color: red;
-    }
-}
-.bloque7{
-    margin: auto;
-    text-align: center;
-    .bloque7__titulo{
-        color: rgb(230, 218, 142);
-    }
-    .bloque7__texto{
-        color: rgb(0, 255, 0);
-    }
-}
-.bloque8{
-    margin: auto;
-    text-align: center;
-    $medida:30px;
-    .bloque8__titulo{
-        color: rgb(64, 62, 230);
-    }
-    .bloque8__texto{
-        height: $medida*6;
-        color: rgb(133, 45, 45);
-    }
-}
+
 }
 
 /* selectores */
