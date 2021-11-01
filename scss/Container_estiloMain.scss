@@ -21,7 +21,7 @@ $bgcolorThird:#3f807e;
 }
 body{
     
-    background-color: $bgcolorMain; 
+    background-color: white; 
     color: white;
     font-family: $font-general;
 }
@@ -30,8 +30,22 @@ body{
 
     
 
-main{
-    
+
+    .tituloApi{
+        width: 100%;
+        
+               
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+	
+        color: rgb(51, 48, 48);
+        display: flex;
+        
+        
+        justify-content: center;
+        
+        letter-spacing: 1px;
+    }
     .tituloPrincipal{
         display:flex;
         justify-items: center;
@@ -68,27 +82,44 @@ main{
     }
     section{
         .sectionMain__personajes{
+            margin-top: 20px;
+            width: 150%;
+            height: 100%;
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            
+            flex-wrap: nowrap;
             .sectionMain__personajes__Element{
+                background-color: rgb(247, 215, 220);
                 width: 200px;
-                height: auto;
+                height: 650px;
                 margin-top: 10px;
-                margin-right:10px ;
+                margin-right:20px ;
                 display: inline-block;
+                overflow: hidden;
                 font-size: 10px;
                 flex:1; 
-                p{
-                    text-align: center;
+                white-space: inherit;
+                position: relative;
+                transition: 450ms all;
+                transform-origin: center left;
+
+                .personaje__description{
+                    margin: 4px;
+                    p{
+                        text-align: justify;
+                        
+                    }
+                    &hover ~ .sectionMain__personajes__Element{
+                        transform: translate3d(100px, 0,0);
+                        cursor: pointer;
+                    } 
                 }
+                
             }
-            .sectionMain__personajes__Element:hover ~ .sectionMain__personajes__Element {
+            /* .sectionMain__personajes__Element:hover ~ .sectionMain__personajes__Element {
                 transform: translate3d(100px, 0,0);
                 
-              }
-              .sectionMain__personajes__Element:hover:hover.sectionMain__personajes__Element {
+              } */
+              .sectionMain__personajes:hover.sectionMain__personajes__Element {
                 opacity: 0.3;
                 
               }
@@ -105,7 +136,7 @@ main{
     }
     /* Bloques adicionales */
 
-}
+
 
 /* selectores */
 ul{
@@ -142,7 +173,7 @@ h2{
   }
   h3{
     color: #FFA24F    ;
-    font-size: 15px;
+    
     font-family: $font-Simpson;
     margin: auto;
     text-align: center;

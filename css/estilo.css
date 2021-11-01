@@ -29,11 +29,13 @@ footer {
       padding: 0; } }
 
 header {
-  height: 500px;
-  background-color: #3f807e;
-  font-weight: bold;
-  display: grid;
-  grid-template-rows: 1fr 1fr; }
+  background-color: rgba(87, 79, 79, 0.275);
+  font-weight: bold; }
+  header .logo {
+    margin-right: 5px;
+    margin-top: 2px;
+    display: flex;
+    justify-content: end; }
   header .menu {
     text-align: center;
     font-size: 12px;
@@ -41,7 +43,8 @@ header {
     margin-bottom: 20px; }
     header .menu .menu__titulo {
       font-size: 30px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-weight: 20px; }
     header .menu nav .menu__Element {
       display: flex;
       flex-direction: row;
@@ -57,14 +60,6 @@ header {
         header .menu nav .menu__Element li:hover ul {
           display: block;
           cursor: pointer; }
-  header .tituloApi {
-    width: 100%;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333030;
-    display: flex;
-    justify-content: center;
-    letter-spacing: 1px; }
 
 @media only screen and (max-width: 900px) {
   header {
@@ -4204,98 +4199,88 @@ td {
   box-sizing: border-box; }
 
 body {
-  background-color: #0c262f;
+  background-color: white;
   color: white;
   font-family: "Arial", cursive; }
 
 /* clases */
-main {
-  /* Bloques adicionales */ }
-  main .tituloPrincipal {
-    display: flex;
-    justify-items: center;
-    width: 40%;
-    height: 150px;
-    font-size: 1em;
-    border-bottom: solid red;
-    text-align: center;
-    margin: auto;
-    margin-top: 50px;
-    -webkit-text-stroke: 1px black;
-    -webkit-text-fill-color: yellow;
-    position: relative; }
-    main .tituloPrincipal .text {
-      font-size: 100%; }
-    main .tituloPrincipal .tituloPrincipal__trapezoid {
-      margin: auto;
-      /* width: 288px;
-            height: 150px; */
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background: #d1d1d1;
-      transform: perspective(6px) rotateX(179deg); }
-  main section .sectionMain__personajes {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
-    main section .sectionMain__personajes .sectionMain__personajes__Element {
-      width: 200px;
-      height: auto;
-      margin-top: 10px;
-      margin-right: 10px;
-      display: inline-block;
-      font-size: 10px;
-      flex: 1; }
-      main section .sectionMain__personajes .sectionMain__personajes__Element p {
-        text-align: center; }
-    main section .sectionMain__personajes .sectionMain__personajes__Element:hover ~ .sectionMain__personajes__Element {
-      transform: translate3d(100px, 0, 0); }
-    main section .sectionMain__personajes .sectionMain__personajes__Element:hover:hover.sectionMain__personajes__Element {
-      opacity: 0.3; }
-    main section .sectionMain__personajes .sectionMain__personajes:hover .sectionMain__personajes__Element:hover {
-      transform: scale(1.5);
-      opacity: 1;
-      background-color: #d1d1d1;
-      border-radius: 20px;
-      text-align: center; }
-  main .bloque5 {
-    margin: auto;
-    text-align: center; }
-    main .bloque5 .bloque5__titulo {
-      color: green; }
-    main .bloque5 .bloque5__textos .bloque5__textos--pink {
-      font-size: 10px;
-      color: pink; }
-    main .bloque5 .bloque5__textos .bloque5__textos--navy {
-      color: navy;
-      font-size: 30px; }
-  main .bloque6 {
-    margin: auto;
-    text-align: center; }
-    main .bloque6 .bloque6__titulo {
-      font-size: 15px;
-      color: honeydew; }
-    main .bloque6 .bloque6__texto {
-      color: red; }
-  main .bloque7 {
-    margin: auto;
-    text-align: center; }
-    main .bloque7 .bloque7__titulo {
-      color: #e6da8e; }
-    main .bloque7 .bloque7__texto {
-      color: lime; }
-  main .bloque8 {
-    margin: auto;
-    text-align: center; }
-    main .bloque8 .bloque8__titulo {
-      color: #403ee6; }
-    main .bloque8 .bloque8__texto {
-      height: 180px;
-      color: #852d2d; }
+.tituloApi {
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333030;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1px; }
 
+.tituloPrincipal {
+  display: flex;
+  justify-items: center;
+  width: 40%;
+  height: 150px;
+  font-size: 1em;
+  border-bottom: solid red;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: yellow;
+  position: relative; }
+  .tituloPrincipal .text {
+    font-size: 100%; }
+  .tituloPrincipal .tituloPrincipal__trapezoid {
+    margin: auto;
+    /* width: 288px;
+            height: 150px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #d1d1d1;
+    transform: perspective(6px) rotateX(179deg); }
+
+section .sectionMain__personajes {
+  margin-top: 20px;
+  width: 150%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  /* .sectionMain__personajes__Element:hover ~ .sectionMain__personajes__Element {
+                transform: translate3d(100px, 0,0);
+                
+              } */ }
+  section .sectionMain__personajes .sectionMain__personajes__Element {
+    background-color: #f7d7dc;
+    width: 200px;
+    height: 650px;
+    margin-top: 10px;
+    margin-right: 20px;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 10px;
+    flex: 1;
+    white-space: inherit;
+    position: relative;
+    transition: 450ms all;
+    transform-origin: center left; }
+    section .sectionMain__personajes .sectionMain__personajes__Element .personaje__description {
+      margin: 4px; }
+      section .sectionMain__personajes .sectionMain__personajes__Element .personaje__description p {
+        text-align: justify; }
+      section .sectionMain__personajes .sectionMain__personajes__Element .personaje__descriptionhover ~ .sectionMain__personajes__Element {
+        transform: translate3d(100px, 0, 0);
+        cursor: pointer; }
+  section .sectionMain__personajes .sectionMain__personajes:hover.sectionMain__personajes__Element {
+    opacity: 0.3; }
+  section .sectionMain__personajes .sectionMain__personajes:hover .sectionMain__personajes__Element:hover {
+    transform: scale(1.5);
+    opacity: 1;
+    background-color: #d1d1d1;
+    border-radius: 20px;
+    text-align: center; }
+
+/* Bloques adicionales */
 /* selectores */
 ul {
   list-style: none;
@@ -4329,7 +4314,6 @@ h2 {
 
 h3 {
   color: #FFA24F;
-  font-size: 15px;
   font-family: "Rock Salt", cursive;
   margin: auto;
   text-align: center; }
