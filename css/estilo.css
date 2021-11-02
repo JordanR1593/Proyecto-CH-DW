@@ -1,7 +1,7 @@
 /* variables */
 /* Import */
 footer {
-  background-color: #3f807e; }
+  background-color: rgba(87, 79, 79, 0.275); }
   footer .footer__footer1 {
     display: flex;
     justify-content: space-around;
@@ -9,7 +9,7 @@ footer {
   footer .footer__redesSociales {
     display: flex;
     justify-content: space-around;
-    filter: invert(0.7) sepia(7) hue-rotate(50deg);
+    filter: invert(0.1) sepia(20) hue-rotate(50deg);
     padding: 20px 300px; }
 
 @media only screen and (max-width: 900px) {
@@ -29,8 +29,9 @@ footer {
       padding: 0; } }
 
 header {
-  background-color: rgba(87, 79, 79, 0.275);
-  font-weight: bold; }
+  background-color: rgba(253, 247, 247, 0.515);
+  font-weight: bold;
+  box-shadow: 0 10px 5px 5px rgba(0, 0, 0, 0.1); }
   header .logo {
     margin-right: 5px;
     margin-top: 2px;
@@ -42,7 +43,7 @@ header {
     padding-bottom: 10px;
     margin-bottom: 20px; }
     header .menu .menu__titulo {
-      font-size: 30px;
+      font-size: 50px;
       margin-bottom: 20px;
       font-weight: 20px; }
     header .menu nav .menu__Element {
@@ -4199,8 +4200,9 @@ td {
   box-sizing: border-box; }
 
 body {
-  background-color: white;
-  color: white;
+  background-image: url("../Imagenes globales/wallpaperbetter.com_1280x768 (1).jpg");
+  background-position: center;
+  color: black;
   font-family: "Arial", cursive; }
 
 /* clases */
@@ -4223,6 +4225,7 @@ body {
   text-align: center;
   margin: auto;
   margin-top: 50px;
+  font-family: 'Rock Salt', cursive;
   -webkit-text-stroke: 1px black;
   -webkit-text-fill-color: yellow;
   position: relative; }
@@ -4230,8 +4233,6 @@ body {
     font-size: 100%; }
   .tituloPrincipal .tituloPrincipal__trapezoid {
     margin: auto;
-    /* width: 288px;
-            height: 150px; */
     position: absolute;
     top: 0;
     left: 0;
@@ -4240,51 +4241,65 @@ body {
     background: #d1d1d1;
     transform: perspective(6px) rotateX(179deg); }
 
-section .sectionMain__personajes {
-  margin-top: 20px;
-  width: 150%;
-  height: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  /* .sectionMain__personajes__Element:hover ~ .sectionMain__personajes__Element {
-                transform: translate3d(100px, 0,0);
-                
-              } */ }
-  section .sectionMain__personajes .sectionMain__personajes__Element {
-    background-color: #f7d7dc;
-    width: 200px;
-    height: 650px;
-    margin-top: 10px;
-    margin-right: 20px;
-    display: inline-block;
-    overflow: hidden;
-    font-size: 10px;
-    flex: 1;
-    white-space: inherit;
-    position: relative;
-    transition: 450ms all;
-    transform-origin: center left; }
-    section .sectionMain__personajes .sectionMain__personajes__Element .personaje__description {
-      margin: 4px; }
-      section .sectionMain__personajes .sectionMain__personajes__Element .personaje__description p {
-        text-align: justify; }
-      section .sectionMain__personajes .sectionMain__personajes__Element .personaje__descriptionhover ~ .sectionMain__personajes__Element {
-        transform: translate3d(100px, 0, 0);
-        cursor: pointer; }
-  section .sectionMain__personajes .sectionMain__personajes:hover.sectionMain__personajes__Element {
-    opacity: 0.3; }
-  section .sectionMain__personajes .sectionMain__personajes:hover .sectionMain__personajes__Element:hover {
-    transform: scale(1.5);
-    opacity: 1;
-    background-color: #d1d1d1;
-    border-radius: 20px;
-    text-align: center; }
+section {
+  width: 100wh;
+  margin-bottom: 50px; }
+  section .sectionMain__personajes {
+    margin-top: 20px;
+    width: 150%;
+    height: 100%;
+    white-space: nowrap;
+    margin-left: 30px; }
+    section .sectionMain__personajes .sectionMain__personajes__Element {
+      border-radius: 20px;
+      border: 1px solid black;
+      box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      /*  height: 650px; */
+      margin-top: 10px;
+      margin-right: 20px;
+      display: inline-block;
+      overflow: hidden;
+      flex: 1;
+      white-space: normal;
+      position: relative;
+      transition: 450ms all;
+      transform-origin: center left; }
+      section .sectionMain__personajes .sectionMain__personajes__Element .personaje__description {
+        margin: 4px;
+        height: 0; }
+        section .sectionMain__personajes .sectionMain__personajes__Element .personaje__description p {
+          text-align: justify;
+          font-size: 12px;
+          z-index: 5; }
+        section .sectionMain__personajes .sectionMain__personajes__Element .personaje__description:hover .personaje__description {
+          height: 400px; }
 
 /* Bloques adicionales */
+.sectionMain__personajes__Element:hover ~ .sectionMain__personajes__Element {
+  transform: translate3d(100px, 0, 0); }
+
+.sectionMain__personajes:hover.sectionMain__personajes__Element {
+  opacity: 0.3; }
+
+.sectionMain__personajes:hover .sectionMain__personajes__Element:hover {
+  transform: scale(1.3);
+  height: 400px;
+  opacity: 1;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  border-radius: 20px;
+  text-align: center; }
+  .sectionMain__personajes:hover .sectionMain__personajes__Element:hover #im {
+    height: 100px; }
+
 /* selectores */
 ul {
   list-style: none;
   display: inline; }
+
+#im {
+  height: 300px; }
 
 h1 {
   background-image: url(https://i.giphy.com/media/l9ASXr0TVQCAw/giphy.gif);
@@ -4314,7 +4329,7 @@ h2 {
 
 h3 {
   color: #FFA24F;
-  font-family: "Rock Salt", cursive;
+  font-family: "Arial", cursive;
   margin: auto;
   text-align: center; }
 
@@ -4323,9 +4338,13 @@ a {
   text-decoration: none; }
 
 @media only screen and (max-width: 900px) {
-  .personajes {
+  .sectionMain__personajes {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: 1fr;
+    width: 900px;
+    justify-items: center;
+    margin: 0 200px;
+    overflow-x: static; } }
 
 @media only screen and (max-width: 800px) {
   main .tituloPrincipal {

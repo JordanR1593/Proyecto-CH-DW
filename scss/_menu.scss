@@ -1,7 +1,8 @@
 header{
     
-    background-color: rgba(87, 79, 79, 0.275);
+    background-color: rgba(253, 247, 247, 0.515);
     font-weight: bold;
+    box-shadow:0  10px 5px 5px rgba($color: #000000, $alpha: 0.1);
     .logo {
         margin-right: 5px;
         margin-top: 2px;
@@ -17,7 +18,7 @@ header{
         margin-bottom: 20px;
         
         .menu__titulo{
-            font-size: 30px;
+            font-size: 50px;
             margin-bottom: 20px;
             font-weight: 20px;
         }

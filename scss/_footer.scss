@@ -1,5 +1,5 @@
 footer{
-    background-color: $bgcolorThird;
+    background-color: rgba(87, 79, 79, 0.275);
     .footer__footer1{
         display: flex;
         justify-content: space-around;
@@ -8,7 +8,7 @@ footer{
     .footer__redesSociales{
         display: flex;
         justify-content: space-around;
-        filter: invert(0.7) sepia(7) hue-rotate(50deg);
+        filter: invert(0.1) sepia(20) hue-rotate(50deg);
         padding: 20px 300px;
     }
 }

@@ -76,13 +76,13 @@
         </div>
 
 
-        <section id="main" class="sectionMain">
+        <section id="main" class="sectionMainp">
             <h3>Sobre cual personaje quieres informacion?</h3>
 
-            <div class="sectionMain__personajes">
+            <div class="sectionMain__personajes" id="imgs">
                 <div class="sectionMain__personajes__Element">
                     <h3>Homero</h3>
-                    <img src="./Imagenes personajes/Homer_Simpson.png" alt="Homero">
+                    <img id="im" src="./Imagenes personajes/Homer_Simpson.png" alt="Homero">
                     <div class="personaje__description">
                         <p>
                             Homero es el personaje principal de la serie animada de televisión Los Simpson. Básicamente,
@@ -97,7 +97,7 @@
 
                 <div class="sectionMain__personajes__Element">
                     <h3>Marge</h3>
-                    <img src="./Imagenes personajes/Marge_Simpson.png" alt="Marge">
+                    <img id="im" src="./Imagenes personajes/Marge_Simpson.png" alt="Marge">
                     <div class="personaje__description">
                         <p>
                             Marge es uno de los personajes principales de la serie animada Los Simpson. es la esposa de
@@ -110,7 +110,7 @@
                 <!---------->
                 <div class="sectionMain__personajes__Element">
                     <h3>Lisa</h3>
-                    <img src="./Imagenes personajes/Lisa_Simpson.png" alt="Lisa">
+                    <img id="im" src="./Imagenes personajes/Lisa_Simpson.png" alt="Lisa">
                     <div class="personaje__description">
                         <p>
                             Lisa es un personaje principal de la serie de televisión animada Los Simpson. Es la hija
@@ -124,7 +124,7 @@
                 <!---------->
                 <div class="sectionMain__personajes__Element">
                     <h3>Bart</h3>
-                    <img src="./Imagenes personajes/Bart_Simpson.png" alt="Bart">
+                    <img id="im"  src="./Imagenes personajes/Bart_Simpson.png" alt="Bart">
                     <div class="personaje__description">
                         <p>
                             Bart es decididamente el más rebelde y travieso de la familia. Es un muchacho simpático y
@@ -138,7 +138,7 @@
 
                 <div class="sectionMain__personajes__Element">
                     <h3>Maggie</h3>
-                    <img src="./Imagenes personajes/Maggie_Simpson.png" alt="Maggie">
+                    <img id="im" src="./Imagenes personajes/Maggie_Simpson.png" alt="Maggie">
                     <div class="personaje__description">
                         <p>
                             Maggie es un personaje principal de la serie de televisión de dibujos animados Los Simpson.
@@ -151,7 +151,7 @@
 
                 <div class="sectionMain__personajes__Element">
                     <h3>Ned Flanders</h3>
-                    <img src="./Imagenes personajes/Ned_Flanders.png" alt="Flanders">
+                    <img id="im" src="./Imagenes personajes/Ned_Flanders.png" alt="Flanders">
                     <div class="personaje__description">
                         <p>
                             Ned Flanders vive en la casa de al lado de la familia Simpson, por lo tanto es su vecino.
@@ -166,7 +166,7 @@
 
                 <div class="sectionMain__personajes__Element">
                     <h3>Apu</h3>
-                    <img src="./Imagenes personajes/Apu_Nahasapeemapetilon.png" alt="Apu">
+                    <img id="im" src="./Imagenes personajes/Apu_Nahasapeemapetilon.png" alt="Apu">
                     <div class="personaje__description">
                         <p>
                             Apu es un personaje secundario y principal. Es el dueño de una tienda en Springfield. El
@@ -181,7 +181,7 @@
 
                 <div class="sectionMain__personajes__Element">
                     <h3>Moe</h3>
-                    <img src="./Imagenes personajes/Moe_Szyslak.png" alt="Moe">
+                    <img id="im" src="./Imagenes personajes/Moe_Szyslak.png" alt="Moe">
                     <div class="personaje__description">
                         <p>
                             Moe es el dueño y único empleado de la "Taberna de Moe" (también conocida como Moe's). Su
@@ -194,7 +194,7 @@
                 <!---------->
                 <div class="sectionMain__personajes__Element">
                     <h3>Mr. Burns</h3>
-                    <img src="./Imagenes personajes/Charles_Montgomery_Burns.png" alt="Mr. Burns">
+                    <img id="im" src="./Imagenes personajes/Charles_Montgomery_Burns.png" alt="Mr. Burns">
                     <div class="personaje__description">
                         <p>
                             Mr. Burns es un personaje malvado y recurrente. Es el propietario de la Planta Nuclear de
@@ -279,7 +279,35 @@
             </div>
 
         </section>
+        
+    <!-- aqui comienza la animacion del carrusel que se desplaza con el movimiento del mouse.
+    Este renglon que sigue llama a la api jqery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Script para crear el js que me premite desplazar el carrusel con el movimiento del mouse- - #imgs es el id que identifica al ul
+    en donde esta contenidas las imagenes del carrusel-->
+    <script type="text/javascript">
+    $(document).ready(function() {
+      var docWidth = $('body').width(),
+        slidesWidth = $('#imgs').width(),
+        rangeX = slidesWidth - docWidth,
+        $images = $('#imgs');
+        // El metodo .on() recibe como primer parametro los eventos que va a capturar js - como segundo parametro el selector - como tercer parametro los datos
+        //-como cuarto parametro el controlador o la funcion a ejecutar
+        // El segundo parametro que aparece en esta funcion .on() que no estoy claro si es el selector o los datos me permitio que el js solo se ejecute cuando..
+        //..el mouse se posa encima del carrusel y no ocurre lo que ocurria anteriormente que incluso estando ubicado el mouse en el header y desplazandolo..
+        //.. horizontalmente se movia el carrusel, situacion que no queria
+        //Importante los ids no se el porque se ponen con un #antes de, en este caso el id del (ul) es imgs y se debe poner #imgs
+        $(document).on('mousemove',"#imgs", function(e) {
+        var mouseX = e.pageX,
+        offset = mouseX / docWidth * slidesWidth - mouseX / 2;
 
+        $images.css({
+            '-webkit-transform': 'translate3d(' + -offset + 'px,0,0)',
+            'transform': 'translate3d(' + -offset + 'px,0,0)'
+         });
+    });
+      });
+    </script>
 
 
 
