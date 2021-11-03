@@ -38,7 +38,7 @@ body{
                
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
-	
+        
         color: rgb(51, 48, 48);
         display: flex;
         
@@ -93,7 +93,7 @@ body{
                 border-radius: 20px;
                 border: 1px solid black;
                 box-shadow: 0  5px 5px 5px rgba($color: #000000, $alpha: 0.1);
-                
+                background-color: white;
                 width: 250px;
                /*  height: 650px; */
                 margin-top: 10px;
@@ -104,7 +104,7 @@ body{
                 flex:1; 
                 white-space: normal;
                 position: relative;
-                transition: 450ms all;
+                transition: 600ms all;
                 transform-origin: center left;
 
                 .personaje__description{
@@ -158,7 +158,12 @@ body{
         }
        
     }
-    
+
+.carousel-inner{
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 20px;
+}    
 /* selectores */
 ul{
     list-style: none;
@@ -179,7 +184,7 @@ h1 {
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
 	text-transform: uppercase;
-	font-size: 120px;
+	font-size: 150px;
 	line-height: .75;
 	margin: 10px 0;
     
@@ -214,7 +219,7 @@ a{
  {
      .sectionMain__personajes {
        display: grid;
-       grid-template-columns:1fr;
+       grid-template-columns:1fr 1fr 1fr;
        width: 900px;
        justify-items: center;
        margin: 0 200px;
