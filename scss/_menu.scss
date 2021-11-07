@@ -1,26 +1,37 @@
 header{
     
-    background-color: rgba(253, 247, 247, 0.515);
+    background-color: rgba(253, 247, 247, 0.9);
     font-weight: bold;
-    box-shadow:0  10px 5px 5px rgba($color: #000000, $alpha: 0.1);
+    box-shadow: 0 10px 5px 5px rgba(70, 69, 69, 0.59);
+    
+    
     .logo {
         margin-right: 5px;
         margin-top: 2px;
-        display: flex;
-        justify-content: end;
-        
+        /* display: flex;
+        justify-content: end; */
+        position: absolute;
+        right: 0;
+        img {
+            clip-path: circle(65% at center);
+        }
+
     }
      
     .menu{
         text-align: center;    
-        font-size: 12px;
+        font-size: 16px;
         padding-bottom: 10px;
         margin-bottom: 20px;
         
         .menu__titulo{
+            padding-top: 50px;
             font-size: 50px;
             margin-bottom: 20px;
             font-weight: 20px;
+            h3 {
+                font-size: 100%;
+            }
         }
         nav{
            
@@ -30,7 +41,7 @@ header{
                 justify-content: space-around;
                 flex-wrap: nowrap;
                 color:$color-Link;
-                font-family: $font-Simpson; 
+                font-family: 'Arvo', serif;
                     
                     
                 

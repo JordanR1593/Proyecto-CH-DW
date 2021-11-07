@@ -6,12 +6,14 @@
     "familia img element";
     margin-bottom: 20px;
     align-items: center;
+    border-radius: 20px;
     #familia{
         grid-area: familia;
     }
-    #img{
+    img{
+        shape-outside: ellipse(40% 50% at lef);
         grid-area: img;
-        width:100%;
+        width:62%;
         margin: auto;
         display: block;
         position: relative;
@@ -19,6 +21,7 @@
     background-color: $bgcaja;
 }
 @mixin familiaE ($num){
+
     display: grid;
     grid-template-columns: 100px 600px;
     text-align: justify;
@@ -26,13 +29,16 @@
     /* "namePerson descriptionPerson" */
     "namePerson"+$num+" descriptionPerson"+$num;
     grid-area: familiaE+$num;
+    p {
+        color:white;
+    }
     #namePerson {
         grid-area: namePerson+$num;
         background-color: yellow;
     }
     #descriptionPerson{
         grid-area: descriptionPerson+$num;
-        background-color: cyan;
+        
     }
 }
 

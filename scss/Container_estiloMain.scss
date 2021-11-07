@@ -24,7 +24,7 @@ body{
     background-image: url('../Imagenes globales/wallpaperbetter.com_1280x768\ \(1\).jpg');
     background-position: center;
     color: black;
-    font-family: $font-general;
+    font-family: 'Poppins', sans-serif;
 }
 /* clases */
 
@@ -41,7 +41,7 @@ body{
         
         color: rgb(51, 48, 48);
         display: flex;
-        
+        transition: 10000ms;
         
         justify-content: center;
         
@@ -69,7 +69,6 @@ body{
         .tituloPrincipal__trapezoid{
             
             margin: auto;
-            
             position: absolute;
             top: 0;
             left: 0;
@@ -81,6 +80,7 @@ body{
         }
     }
     section{
+        margin-top: 20px;
         width:100wh;
        margin-bottom: 50px;
         .sectionMain__personajes{
@@ -92,10 +92,12 @@ body{
             .sectionMain__personajes__Element{
                 border-radius: 20px;
                 border: 1px solid black;
-                box-shadow: 0  5px 5px 5px rgba($color: #000000, $alpha: 0.1);
+                $border:#058;
+                box-shadow: inset 65px 4px 0px $border;
                 background-color: white;
+                
                 width: 250px;
-               /*  height: 650px; */
+               
                 margin-top: 10px;
                 margin-right:20px ;
                 display: inline-block;
@@ -106,7 +108,9 @@ body{
                 position: relative;
                 transition: 600ms all;
                 transform-origin: center left;
-
+                @if background-color==$border{
+                    color:white;
+                }
                 .personaje__description{
                     margin: 4px;
                     height: 0;
@@ -176,7 +180,7 @@ ul{
     
 }
 h1 {
-    background-image: url(https://i.giphy.com/media/l9ASXr0TVQCAw/giphy.gif);
+    background-image: url("../Imagenes globales/ezgif.com-gif-maker.gif");
 	background-clip: block;
 	background-size: cover;
 	color: transparent;
@@ -206,7 +210,7 @@ h2{
     color: #FFA24F    ;
     
     font-family: $font-general;
-    margin: auto;
+    font-weight: bold;
     text-align: center;
 }
 a{

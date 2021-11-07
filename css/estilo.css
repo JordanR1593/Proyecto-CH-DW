@@ -29,30 +29,37 @@ footer {
       padding: 0; } }
 
 header {
-  background-color: rgba(253, 247, 247, 0.515);
+  background-color: rgba(253, 247, 247, 0.9);
   font-weight: bold;
-  box-shadow: 0 10px 5px 5px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 10px 5px 5px rgba(70, 69, 69, 0.59); }
   header .logo {
     margin-right: 5px;
     margin-top: 2px;
-    display: flex;
-    justify-content: end; }
+    /* display: flex;
+        justify-content: end; */
+    position: absolute;
+    right: 0; }
+    header .logo img {
+      clip-path: circle(65% at center); }
   header .menu {
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     padding-bottom: 10px;
     margin-bottom: 20px; }
     header .menu .menu__titulo {
+      padding-top: 50px;
       font-size: 50px;
       margin-bottom: 20px;
       font-weight: 20px; }
+      header .menu .menu__titulo h3 {
+        font-size: 100%; }
     header .menu nav .menu__Element {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       flex-wrap: nowrap;
       color: rgba(18, 55, 51, 0.727);
-      font-family: "Rock Salt", cursive; }
+      font-family: 'Arvo', serif; }
       header .menu nav .menu__Element ul {
         display: none;
         background-color: #d1d1d1; }
@@ -138,12 +145,14 @@ td {
     grid-template-areas: "familia img element";
     margin-bottom: 20px;
     align-items: center;
+    border-radius: 20px;
     background-color: #214854; }
     .familias .familiasGroup1 #familia {
       grid-area: familia; }
-    .familias .familiasGroup1 #img {
+    .familias .familiasGroup1 img {
+      shape-outside: ellipse(40% 50% at lef);
       grid-area: img;
-      width: 100%;
+      width: 62%;
       margin: auto;
       display: block;
       position: relative; }
@@ -171,60 +180,65 @@ td {
         text-align: justify;
         grid-template-areas: "namePerson1 descriptionPerson1";
         grid-area: familiaE1; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE1 p {
+          color: white; }
         .familias .familiasGroup1 .familiaElement1 .familiaE1 #namePerson {
           grid-area: namePerson1;
           background-color: yellow; }
         .familias .familiasGroup1 .familiaElement1 .familiaE1 #descriptionPerson {
-          grid-area: descriptionPerson1;
-          background-color: cyan; }
+          grid-area: descriptionPerson1; }
       .familias .familiasGroup1 .familiaElement1 .familiaE2 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson2 descriptionPerson2";
         grid-area: familiaE2; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE2 p {
+          color: white; }
         .familias .familiasGroup1 .familiaElement1 .familiaE2 #namePerson {
           grid-area: namePerson2;
           background-color: yellow; }
         .familias .familiasGroup1 .familiaElement1 .familiaE2 #descriptionPerson {
-          grid-area: descriptionPerson2;
-          background-color: cyan; }
+          grid-area: descriptionPerson2; }
       .familias .familiasGroup1 .familiaElement1 .familiaE3 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson3 descriptionPerson3";
         grid-area: familiaE3; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE3 p {
+          color: white; }
         .familias .familiasGroup1 .familiaElement1 .familiaE3 #namePerson {
           grid-area: namePerson3;
           background-color: yellow; }
         .familias .familiasGroup1 .familiaElement1 .familiaE3 #descriptionPerson {
-          grid-area: descriptionPerson3;
-          background-color: cyan; }
+          grid-area: descriptionPerson3; }
       .familias .familiasGroup1 .familiaElement1 .familiaE4 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson4 descriptionPerson4";
         grid-area: familiaE4; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE4 p {
+          color: white; }
         .familias .familiasGroup1 .familiaElement1 .familiaE4 #namePerson {
           grid-area: namePerson4;
           background-color: yellow; }
         .familias .familiasGroup1 .familiaElement1 .familiaE4 #descriptionPerson {
-          grid-area: descriptionPerson4;
-          background-color: cyan; }
+          grid-area: descriptionPerson4; }
       .familias .familiasGroup1 .familiaElement1 .familiaE5 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson5 descriptionPerson5";
         grid-area: familiaE5; }
+        .familias .familiasGroup1 .familiaElement1 .familiaE5 p {
+          color: white; }
         .familias .familiasGroup1 .familiaElement1 .familiaE5 #namePerson {
           grid-area: namePerson5;
           background-color: yellow; }
         .familias .familiasGroup1 .familiaElement1 .familiaE5 #descriptionPerson {
-          grid-area: descriptionPerson5;
-          background-color: cyan; }
+          grid-area: descriptionPerson5; }
   .familias .familiasGroup2 {
     display: grid;
     width: 90%;
@@ -232,12 +246,14 @@ td {
     grid-template-areas: "familia img element";
     margin-bottom: 20px;
     align-items: center;
+    border-radius: 20px;
     background-color: #214854; }
     .familias .familiasGroup2 #familia {
       grid-area: familia; }
-    .familias .familiasGroup2 #img {
+    .familias .familiasGroup2 img {
+      shape-outside: ellipse(40% 50% at lef);
       grid-area: img;
-      width: 100%;
+      width: 62%;
       margin: auto;
       display: block;
       position: relative; }
@@ -265,60 +281,65 @@ td {
         text-align: justify;
         grid-template-areas: "namePerson1 descriptionPerson1";
         grid-area: familiaE1; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE1 p {
+          color: white; }
         .familias .familiasGroup2 .familiaElement2 .familiaE1 #namePerson {
           grid-area: namePerson1;
           background-color: yellow; }
         .familias .familiasGroup2 .familiaElement2 .familiaE1 #descriptionPerson {
-          grid-area: descriptionPerson1;
-          background-color: cyan; }
+          grid-area: descriptionPerson1; }
       .familias .familiasGroup2 .familiaElement2 .familiaE2 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson2 descriptionPerson2";
         grid-area: familiaE2; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE2 p {
+          color: white; }
         .familias .familiasGroup2 .familiaElement2 .familiaE2 #namePerson {
           grid-area: namePerson2;
           background-color: yellow; }
         .familias .familiasGroup2 .familiaElement2 .familiaE2 #descriptionPerson {
-          grid-area: descriptionPerson2;
-          background-color: cyan; }
+          grid-area: descriptionPerson2; }
       .familias .familiasGroup2 .familiaElement2 .familiaE3 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson3 descriptionPerson3";
         grid-area: familiaE3; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE3 p {
+          color: white; }
         .familias .familiasGroup2 .familiaElement2 .familiaE3 #namePerson {
           grid-area: namePerson3;
           background-color: yellow; }
         .familias .familiasGroup2 .familiaElement2 .familiaE3 #descriptionPerson {
-          grid-area: descriptionPerson3;
-          background-color: cyan; }
+          grid-area: descriptionPerson3; }
       .familias .familiasGroup2 .familiaElement2 .familiaE4 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson4 descriptionPerson4";
         grid-area: familiaE4; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE4 p {
+          color: white; }
         .familias .familiasGroup2 .familiaElement2 .familiaE4 #namePerson {
           grid-area: namePerson4;
           background-color: yellow; }
         .familias .familiasGroup2 .familiaElement2 .familiaE4 #descriptionPerson {
-          grid-area: descriptionPerson4;
-          background-color: cyan; }
+          grid-area: descriptionPerson4; }
       .familias .familiasGroup2 .familiaElement2 .familiaE5 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson5 descriptionPerson5";
         grid-area: familiaE5; }
+        .familias .familiasGroup2 .familiaElement2 .familiaE5 p {
+          color: white; }
         .familias .familiasGroup2 .familiaElement2 .familiaE5 #namePerson {
           grid-area: namePerson5;
           background-color: yellow; }
         .familias .familiasGroup2 .familiaElement2 .familiaE5 #descriptionPerson {
-          grid-area: descriptionPerson5;
-          background-color: cyan; }
+          grid-area: descriptionPerson5; }
   .familias .familiasGroup3 {
     display: grid;
     width: 90%;
@@ -326,12 +347,14 @@ td {
     grid-template-areas: "familia img element";
     margin-bottom: 20px;
     align-items: center;
+    border-radius: 20px;
     background-color: #214854; }
     .familias .familiasGroup3 #familia {
       grid-area: familia; }
-    .familias .familiasGroup3 #img {
+    .familias .familiasGroup3 img {
+      shape-outside: ellipse(40% 50% at lef);
       grid-area: img;
-      width: 100%;
+      width: 62%;
       margin: auto;
       display: block;
       position: relative; }
@@ -359,60 +382,65 @@ td {
         text-align: justify;
         grid-template-areas: "namePerson1 descriptionPerson1";
         grid-area: familiaE1; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE1 p {
+          color: white; }
         .familias .familiasGroup3 .familiaElement3 .familiaE1 #namePerson {
           grid-area: namePerson1;
           background-color: yellow; }
         .familias .familiasGroup3 .familiaElement3 .familiaE1 #descriptionPerson {
-          grid-area: descriptionPerson1;
-          background-color: cyan; }
+          grid-area: descriptionPerson1; }
       .familias .familiasGroup3 .familiaElement3 .familiaE2 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson2 descriptionPerson2";
         grid-area: familiaE2; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE2 p {
+          color: white; }
         .familias .familiasGroup3 .familiaElement3 .familiaE2 #namePerson {
           grid-area: namePerson2;
           background-color: yellow; }
         .familias .familiasGroup3 .familiaElement3 .familiaE2 #descriptionPerson {
-          grid-area: descriptionPerson2;
-          background-color: cyan; }
+          grid-area: descriptionPerson2; }
       .familias .familiasGroup3 .familiaElement3 .familiaE3 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson3 descriptionPerson3";
         grid-area: familiaE3; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE3 p {
+          color: white; }
         .familias .familiasGroup3 .familiaElement3 .familiaE3 #namePerson {
           grid-area: namePerson3;
           background-color: yellow; }
         .familias .familiasGroup3 .familiaElement3 .familiaE3 #descriptionPerson {
-          grid-area: descriptionPerson3;
-          background-color: cyan; }
+          grid-area: descriptionPerson3; }
       .familias .familiasGroup3 .familiaElement3 .familiaE4 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson4 descriptionPerson4";
         grid-area: familiaE4; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE4 p {
+          color: white; }
         .familias .familiasGroup3 .familiaElement3 .familiaE4 #namePerson {
           grid-area: namePerson4;
           background-color: yellow; }
         .familias .familiasGroup3 .familiaElement3 .familiaE4 #descriptionPerson {
-          grid-area: descriptionPerson4;
-          background-color: cyan; }
+          grid-area: descriptionPerson4; }
       .familias .familiasGroup3 .familiaElement3 .familiaE5 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson5 descriptionPerson5";
         grid-area: familiaE5; }
+        .familias .familiasGroup3 .familiaElement3 .familiaE5 p {
+          color: white; }
         .familias .familiasGroup3 .familiaElement3 .familiaE5 #namePerson {
           grid-area: namePerson5;
           background-color: yellow; }
         .familias .familiasGroup3 .familiaElement3 .familiaE5 #descriptionPerson {
-          grid-area: descriptionPerson5;
-          background-color: cyan; }
+          grid-area: descriptionPerson5; }
   .familias .familiasGroup4 {
     display: grid;
     width: 90%;
@@ -420,12 +448,14 @@ td {
     grid-template-areas: "familia img element";
     margin-bottom: 20px;
     align-items: center;
+    border-radius: 20px;
     background-color: #214854; }
     .familias .familiasGroup4 #familia {
       grid-area: familia; }
-    .familias .familiasGroup4 #img {
+    .familias .familiasGroup4 img {
+      shape-outside: ellipse(40% 50% at lef);
       grid-area: img;
-      width: 100%;
+      width: 62%;
       margin: auto;
       display: block;
       position: relative; }
@@ -453,60 +483,65 @@ td {
         text-align: justify;
         grid-template-areas: "namePerson1 descriptionPerson1";
         grid-area: familiaE1; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE1 p {
+          color: white; }
         .familias .familiasGroup4 .familiaElement4 .familiaE1 #namePerson {
           grid-area: namePerson1;
           background-color: yellow; }
         .familias .familiasGroup4 .familiaElement4 .familiaE1 #descriptionPerson {
-          grid-area: descriptionPerson1;
-          background-color: cyan; }
+          grid-area: descriptionPerson1; }
       .familias .familiasGroup4 .familiaElement4 .familiaE2 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson2 descriptionPerson2";
         grid-area: familiaE2; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE2 p {
+          color: white; }
         .familias .familiasGroup4 .familiaElement4 .familiaE2 #namePerson {
           grid-area: namePerson2;
           background-color: yellow; }
         .familias .familiasGroup4 .familiaElement4 .familiaE2 #descriptionPerson {
-          grid-area: descriptionPerson2;
-          background-color: cyan; }
+          grid-area: descriptionPerson2; }
       .familias .familiasGroup4 .familiaElement4 .familiaE3 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson3 descriptionPerson3";
         grid-area: familiaE3; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE3 p {
+          color: white; }
         .familias .familiasGroup4 .familiaElement4 .familiaE3 #namePerson {
           grid-area: namePerson3;
           background-color: yellow; }
         .familias .familiasGroup4 .familiaElement4 .familiaE3 #descriptionPerson {
-          grid-area: descriptionPerson3;
-          background-color: cyan; }
+          grid-area: descriptionPerson3; }
       .familias .familiasGroup4 .familiaElement4 .familiaE4 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson4 descriptionPerson4";
         grid-area: familiaE4; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE4 p {
+          color: white; }
         .familias .familiasGroup4 .familiaElement4 .familiaE4 #namePerson {
           grid-area: namePerson4;
           background-color: yellow; }
         .familias .familiasGroup4 .familiaElement4 .familiaE4 #descriptionPerson {
-          grid-area: descriptionPerson4;
-          background-color: cyan; }
+          grid-area: descriptionPerson4; }
       .familias .familiasGroup4 .familiaElement4 .familiaE5 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson5 descriptionPerson5";
         grid-area: familiaE5; }
+        .familias .familiasGroup4 .familiaElement4 .familiaE5 p {
+          color: white; }
         .familias .familiasGroup4 .familiaElement4 .familiaE5 #namePerson {
           grid-area: namePerson5;
           background-color: yellow; }
         .familias .familiasGroup4 .familiaElement4 .familiaE5 #descriptionPerson {
-          grid-area: descriptionPerson5;
-          background-color: cyan; }
+          grid-area: descriptionPerson5; }
   .familias .familiasGroup5 {
     display: grid;
     width: 90%;
@@ -514,12 +549,14 @@ td {
     grid-template-areas: "familia img element";
     margin-bottom: 20px;
     align-items: center;
+    border-radius: 20px;
     background-color: #214854; }
     .familias .familiasGroup5 #familia {
       grid-area: familia; }
-    .familias .familiasGroup5 #img {
+    .familias .familiasGroup5 img {
+      shape-outside: ellipse(40% 50% at lef);
       grid-area: img;
-      width: 100%;
+      width: 62%;
       margin: auto;
       display: block;
       position: relative; }
@@ -547,60 +584,65 @@ td {
         text-align: justify;
         grid-template-areas: "namePerson1 descriptionPerson1";
         grid-area: familiaE1; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE1 p {
+          color: white; }
         .familias .familiasGroup5 .familiaElement5 .familiaE1 #namePerson {
           grid-area: namePerson1;
           background-color: yellow; }
         .familias .familiasGroup5 .familiaElement5 .familiaE1 #descriptionPerson {
-          grid-area: descriptionPerson1;
-          background-color: cyan; }
+          grid-area: descriptionPerson1; }
       .familias .familiasGroup5 .familiaElement5 .familiaE2 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson2 descriptionPerson2";
         grid-area: familiaE2; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE2 p {
+          color: white; }
         .familias .familiasGroup5 .familiaElement5 .familiaE2 #namePerson {
           grid-area: namePerson2;
           background-color: yellow; }
         .familias .familiasGroup5 .familiaElement5 .familiaE2 #descriptionPerson {
-          grid-area: descriptionPerson2;
-          background-color: cyan; }
+          grid-area: descriptionPerson2; }
       .familias .familiasGroup5 .familiaElement5 .familiaE3 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson3 descriptionPerson3";
         grid-area: familiaE3; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE3 p {
+          color: white; }
         .familias .familiasGroup5 .familiaElement5 .familiaE3 #namePerson {
           grid-area: namePerson3;
           background-color: yellow; }
         .familias .familiasGroup5 .familiaElement5 .familiaE3 #descriptionPerson {
-          grid-area: descriptionPerson3;
-          background-color: cyan; }
+          grid-area: descriptionPerson3; }
       .familias .familiasGroup5 .familiaElement5 .familiaE4 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson4 descriptionPerson4";
         grid-area: familiaE4; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE4 p {
+          color: white; }
         .familias .familiasGroup5 .familiaElement5 .familiaE4 #namePerson {
           grid-area: namePerson4;
           background-color: yellow; }
         .familias .familiasGroup5 .familiaElement5 .familiaE4 #descriptionPerson {
-          grid-area: descriptionPerson4;
-          background-color: cyan; }
+          grid-area: descriptionPerson4; }
       .familias .familiasGroup5 .familiaElement5 .familiaE5 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson5 descriptionPerson5";
         grid-area: familiaE5; }
+        .familias .familiasGroup5 .familiaElement5 .familiaE5 p {
+          color: white; }
         .familias .familiasGroup5 .familiaElement5 .familiaE5 #namePerson {
           grid-area: namePerson5;
           background-color: yellow; }
         .familias .familiasGroup5 .familiaElement5 .familiaE5 #descriptionPerson {
-          grid-area: descriptionPerson5;
-          background-color: cyan; }
+          grid-area: descriptionPerson5; }
   .familias .familiasGroup6 {
     display: grid;
     width: 90%;
@@ -608,12 +650,14 @@ td {
     grid-template-areas: "familia img element";
     margin-bottom: 20px;
     align-items: center;
+    border-radius: 20px;
     background-color: #214854; }
     .familias .familiasGroup6 #familia {
       grid-area: familia; }
-    .familias .familiasGroup6 #img {
+    .familias .familiasGroup6 img {
+      shape-outside: ellipse(40% 50% at lef);
       grid-area: img;
-      width: 100%;
+      width: 62%;
       margin: auto;
       display: block;
       position: relative; }
@@ -641,60 +685,65 @@ td {
         text-align: justify;
         grid-template-areas: "namePerson1 descriptionPerson1";
         grid-area: familiaE1; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE1 p {
+          color: white; }
         .familias .familiasGroup6 .familiaElement6 .familiaE1 #namePerson {
           grid-area: namePerson1;
           background-color: yellow; }
         .familias .familiasGroup6 .familiaElement6 .familiaE1 #descriptionPerson {
-          grid-area: descriptionPerson1;
-          background-color: cyan; }
+          grid-area: descriptionPerson1; }
       .familias .familiasGroup6 .familiaElement6 .familiaE2 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson2 descriptionPerson2";
         grid-area: familiaE2; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE2 p {
+          color: white; }
         .familias .familiasGroup6 .familiaElement6 .familiaE2 #namePerson {
           grid-area: namePerson2;
           background-color: yellow; }
         .familias .familiasGroup6 .familiaElement6 .familiaE2 #descriptionPerson {
-          grid-area: descriptionPerson2;
-          background-color: cyan; }
+          grid-area: descriptionPerson2; }
       .familias .familiasGroup6 .familiaElement6 .familiaE3 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson3 descriptionPerson3";
         grid-area: familiaE3; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE3 p {
+          color: white; }
         .familias .familiasGroup6 .familiaElement6 .familiaE3 #namePerson {
           grid-area: namePerson3;
           background-color: yellow; }
         .familias .familiasGroup6 .familiaElement6 .familiaE3 #descriptionPerson {
-          grid-area: descriptionPerson3;
-          background-color: cyan; }
+          grid-area: descriptionPerson3; }
       .familias .familiasGroup6 .familiaElement6 .familiaE4 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson4 descriptionPerson4";
         grid-area: familiaE4; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE4 p {
+          color: white; }
         .familias .familiasGroup6 .familiaElement6 .familiaE4 #namePerson {
           grid-area: namePerson4;
           background-color: yellow; }
         .familias .familiasGroup6 .familiaElement6 .familiaE4 #descriptionPerson {
-          grid-area: descriptionPerson4;
-          background-color: cyan; }
+          grid-area: descriptionPerson4; }
       .familias .familiasGroup6 .familiaElement6 .familiaE5 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson5 descriptionPerson5";
         grid-area: familiaE5; }
+        .familias .familiasGroup6 .familiaElement6 .familiaE5 p {
+          color: white; }
         .familias .familiasGroup6 .familiaElement6 .familiaE5 #namePerson {
           grid-area: namePerson5;
           background-color: yellow; }
         .familias .familiasGroup6 .familiaElement6 .familiaE5 #descriptionPerson {
-          grid-area: descriptionPerson5;
-          background-color: cyan; }
+          grid-area: descriptionPerson5; }
   .familias .familiasGroup7 {
     display: grid;
     width: 90%;
@@ -702,12 +751,14 @@ td {
     grid-template-areas: "familia img element";
     margin-bottom: 20px;
     align-items: center;
+    border-radius: 20px;
     background-color: #214854; }
     .familias .familiasGroup7 #familia {
       grid-area: familia; }
-    .familias .familiasGroup7 #img {
+    .familias .familiasGroup7 img {
+      shape-outside: ellipse(40% 50% at lef);
       grid-area: img;
-      width: 100%;
+      width: 62%;
       margin: auto;
       display: block;
       position: relative; }
@@ -735,60 +786,65 @@ td {
         text-align: justify;
         grid-template-areas: "namePerson1 descriptionPerson1";
         grid-area: familiaE1; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE1 p {
+          color: white; }
         .familias .familiasGroup7 .familiaElement7 .familiaE1 #namePerson {
           grid-area: namePerson1;
           background-color: yellow; }
         .familias .familiasGroup7 .familiaElement7 .familiaE1 #descriptionPerson {
-          grid-area: descriptionPerson1;
-          background-color: cyan; }
+          grid-area: descriptionPerson1; }
       .familias .familiasGroup7 .familiaElement7 .familiaE2 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson2 descriptionPerson2";
         grid-area: familiaE2; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE2 p {
+          color: white; }
         .familias .familiasGroup7 .familiaElement7 .familiaE2 #namePerson {
           grid-area: namePerson2;
           background-color: yellow; }
         .familias .familiasGroup7 .familiaElement7 .familiaE2 #descriptionPerson {
-          grid-area: descriptionPerson2;
-          background-color: cyan; }
+          grid-area: descriptionPerson2; }
       .familias .familiasGroup7 .familiaElement7 .familiaE3 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson3 descriptionPerson3";
         grid-area: familiaE3; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE3 p {
+          color: white; }
         .familias .familiasGroup7 .familiaElement7 .familiaE3 #namePerson {
           grid-area: namePerson3;
           background-color: yellow; }
         .familias .familiasGroup7 .familiaElement7 .familiaE3 #descriptionPerson {
-          grid-area: descriptionPerson3;
-          background-color: cyan; }
+          grid-area: descriptionPerson3; }
       .familias .familiasGroup7 .familiaElement7 .familiaE4 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson4 descriptionPerson4";
         grid-area: familiaE4; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE4 p {
+          color: white; }
         .familias .familiasGroup7 .familiaElement7 .familiaE4 #namePerson {
           grid-area: namePerson4;
           background-color: yellow; }
         .familias .familiasGroup7 .familiaElement7 .familiaE4 #descriptionPerson {
-          grid-area: descriptionPerson4;
-          background-color: cyan; }
+          grid-area: descriptionPerson4; }
       .familias .familiasGroup7 .familiaElement7 .familiaE5 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson5 descriptionPerson5";
         grid-area: familiaE5; }
+        .familias .familiasGroup7 .familiaElement7 .familiaE5 p {
+          color: white; }
         .familias .familiasGroup7 .familiaElement7 .familiaE5 #namePerson {
           grid-area: namePerson5;
           background-color: yellow; }
         .familias .familiasGroup7 .familiaElement7 .familiaE5 #descriptionPerson {
-          grid-area: descriptionPerson5;
-          background-color: cyan; }
+          grid-area: descriptionPerson5; }
   .familias .familiasGroup8 {
     display: grid;
     width: 90%;
@@ -796,12 +852,14 @@ td {
     grid-template-areas: "familia img element";
     margin-bottom: 20px;
     align-items: center;
+    border-radius: 20px;
     background-color: #214854; }
     .familias .familiasGroup8 #familia {
       grid-area: familia; }
-    .familias .familiasGroup8 #img {
+    .familias .familiasGroup8 img {
+      shape-outside: ellipse(40% 50% at lef);
       grid-area: img;
-      width: 100%;
+      width: 62%;
       margin: auto;
       display: block;
       position: relative; }
@@ -829,60 +887,65 @@ td {
         text-align: justify;
         grid-template-areas: "namePerson1 descriptionPerson1";
         grid-area: familiaE1; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE1 p {
+          color: white; }
         .familias .familiasGroup8 .familiaElement8 .familiaE1 #namePerson {
           grid-area: namePerson1;
           background-color: yellow; }
         .familias .familiasGroup8 .familiaElement8 .familiaE1 #descriptionPerson {
-          grid-area: descriptionPerson1;
-          background-color: cyan; }
+          grid-area: descriptionPerson1; }
       .familias .familiasGroup8 .familiaElement8 .familiaE2 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson2 descriptionPerson2";
         grid-area: familiaE2; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE2 p {
+          color: white; }
         .familias .familiasGroup8 .familiaElement8 .familiaE2 #namePerson {
           grid-area: namePerson2;
           background-color: yellow; }
         .familias .familiasGroup8 .familiaElement8 .familiaE2 #descriptionPerson {
-          grid-area: descriptionPerson2;
-          background-color: cyan; }
+          grid-area: descriptionPerson2; }
       .familias .familiasGroup8 .familiaElement8 .familiaE3 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson3 descriptionPerson3";
         grid-area: familiaE3; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE3 p {
+          color: white; }
         .familias .familiasGroup8 .familiaElement8 .familiaE3 #namePerson {
           grid-area: namePerson3;
           background-color: yellow; }
         .familias .familiasGroup8 .familiaElement8 .familiaE3 #descriptionPerson {
-          grid-area: descriptionPerson3;
-          background-color: cyan; }
+          grid-area: descriptionPerson3; }
       .familias .familiasGroup8 .familiaElement8 .familiaE4 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson4 descriptionPerson4";
         grid-area: familiaE4; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE4 p {
+          color: white; }
         .familias .familiasGroup8 .familiaElement8 .familiaE4 #namePerson {
           grid-area: namePerson4;
           background-color: yellow; }
         .familias .familiasGroup8 .familiaElement8 .familiaE4 #descriptionPerson {
-          grid-area: descriptionPerson4;
-          background-color: cyan; }
+          grid-area: descriptionPerson4; }
       .familias .familiasGroup8 .familiaElement8 .familiaE5 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson5 descriptionPerson5";
         grid-area: familiaE5; }
+        .familias .familiasGroup8 .familiaElement8 .familiaE5 p {
+          color: white; }
         .familias .familiasGroup8 .familiaElement8 .familiaE5 #namePerson {
           grid-area: namePerson5;
           background-color: yellow; }
         .familias .familiasGroup8 .familiaElement8 .familiaE5 #descriptionPerson {
-          grid-area: descriptionPerson5;
-          background-color: cyan; }
+          grid-area: descriptionPerson5; }
   .familias .familiasGroup9 {
     display: grid;
     width: 90%;
@@ -890,12 +953,14 @@ td {
     grid-template-areas: "familia img element";
     margin-bottom: 20px;
     align-items: center;
+    border-radius: 20px;
     background-color: #214854; }
     .familias .familiasGroup9 #familia {
       grid-area: familia; }
-    .familias .familiasGroup9 #img {
+    .familias .familiasGroup9 img {
+      shape-outside: ellipse(40% 50% at lef);
       grid-area: img;
-      width: 100%;
+      width: 62%;
       margin: auto;
       display: block;
       position: relative; }
@@ -923,60 +988,65 @@ td {
         text-align: justify;
         grid-template-areas: "namePerson1 descriptionPerson1";
         grid-area: familiaE1; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE1 p {
+          color: white; }
         .familias .familiasGroup9 .familiaElement9 .familiaE1 #namePerson {
           grid-area: namePerson1;
           background-color: yellow; }
         .familias .familiasGroup9 .familiaElement9 .familiaE1 #descriptionPerson {
-          grid-area: descriptionPerson1;
-          background-color: cyan; }
+          grid-area: descriptionPerson1; }
       .familias .familiasGroup9 .familiaElement9 .familiaE2 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson2 descriptionPerson2";
         grid-area: familiaE2; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE2 p {
+          color: white; }
         .familias .familiasGroup9 .familiaElement9 .familiaE2 #namePerson {
           grid-area: namePerson2;
           background-color: yellow; }
         .familias .familiasGroup9 .familiaElement9 .familiaE2 #descriptionPerson {
-          grid-area: descriptionPerson2;
-          background-color: cyan; }
+          grid-area: descriptionPerson2; }
       .familias .familiasGroup9 .familiaElement9 .familiaE3 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson3 descriptionPerson3";
         grid-area: familiaE3; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE3 p {
+          color: white; }
         .familias .familiasGroup9 .familiaElement9 .familiaE3 #namePerson {
           grid-area: namePerson3;
           background-color: yellow; }
         .familias .familiasGroup9 .familiaElement9 .familiaE3 #descriptionPerson {
-          grid-area: descriptionPerson3;
-          background-color: cyan; }
+          grid-area: descriptionPerson3; }
       .familias .familiasGroup9 .familiaElement9 .familiaE4 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson4 descriptionPerson4";
         grid-area: familiaE4; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE4 p {
+          color: white; }
         .familias .familiasGroup9 .familiaElement9 .familiaE4 #namePerson {
           grid-area: namePerson4;
           background-color: yellow; }
         .familias .familiasGroup9 .familiaElement9 .familiaE4 #descriptionPerson {
-          grid-area: descriptionPerson4;
-          background-color: cyan; }
+          grid-area: descriptionPerson4; }
       .familias .familiasGroup9 .familiaElement9 .familiaE5 {
         display: grid;
         grid-template-columns: 100px 600px;
         text-align: justify;
         grid-template-areas: "namePerson5 descriptionPerson5";
         grid-area: familiaE5; }
+        .familias .familiasGroup9 .familiaElement9 .familiaE5 p {
+          color: white; }
         .familias .familiasGroup9 .familiaElement9 .familiaE5 #namePerson {
           grid-area: namePerson5;
           background-color: yellow; }
         .familias .familiasGroup9 .familiaElement9 .familiaE5 #descriptionPerson {
-          grid-area: descriptionPerson5;
-          background-color: cyan; }
+          grid-area: descriptionPerson5; }
 
 /* .familias img{
     display: block;
@@ -4203,7 +4273,7 @@ body {
   background-image: url("../Imagenes globales/wallpaperbetter.com_1280x768 (1).jpg");
   background-position: center;
   color: black;
-  font-family: "Arial", cursive; }
+  font-family: 'Poppins', sans-serif; }
 
 /* clases */
 .tituloApi {
@@ -4212,6 +4282,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #333030;
   display: flex;
+  transition: 10000ms;
   justify-content: center;
   letter-spacing: 1px; }
 
@@ -4242,6 +4313,7 @@ body {
     transform: perspective(6px) rotateX(179deg); }
 
 section {
+  margin-top: 20px;
   width: 100wh;
   margin-bottom: 50px; }
   section .sectionMain__personajes {
@@ -4253,10 +4325,9 @@ section {
     section .sectionMain__personajes .sectionMain__personajes__Element {
       border-radius: 20px;
       border: 1px solid black;
-      box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: inset 65px 4px 0px #058;
       background-color: white;
       width: 250px;
-      /*  height: 650px; */
       margin-top: 10px;
       margin-right: 20px;
       display: inline-block;
@@ -4308,7 +4379,7 @@ ul {
   height: 300px; }
 
 h1 {
-  background-image: url(https://i.giphy.com/media/l9ASXr0TVQCAw/giphy.gif);
+  background-image: url("../Imagenes globales/ezgif.com-gif-maker.gif");
   background-clip: block;
   background-size: cover;
   color: transparent;
@@ -4336,7 +4407,7 @@ h2 {
 h3 {
   color: #FFA24F;
   font-family: "Arial", cursive;
-  margin: auto;
+  font-weight: bold;
   text-align: center; }
 
 a {
