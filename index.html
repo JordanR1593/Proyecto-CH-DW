@@ -11,11 +11,9 @@
         content="los simpson--Api springfield, personajes simpson, simpson, homero, marge, lisa, bart, maggie, ned flanders, apu, Moe, Mr. Burns">
     <title>Los simpson--Api springfield/Personajes</title>
     <!-- <link  href=" ../css/bootstrap-grid.min.css" rel="stylesheet"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,33 +30,53 @@
 <body>
     <header>
         <div>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="./Imagenes globales/logoSPF.jpg" alt="Logo" width=100px height="100px">
-                </a>
-            </div>
+
 
 
             <div class="menu">
-                <div class="menu__titulo">
-                    <h3>Menu</h3>
-                </div>
-                <nav>
-                    <ul class="menu__Element">
-                        <li>Informacion de personajes
-                            <ul>
-                                <li><a href="#main">Main</a></li>
-                                <li><a href="#footer">Footer</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="secciones/genealogia.html">Genealogia de personajes principales</a></li>
-                        <li><a href="secciones/mapa.html">Mapa Springfield</a></li>
-                        <li><a href="secciones/about.html">Acerca de</a></li>
-                        <li><a href="secciones/capitulos.html">Lista de Episodios</a></li>
-                        <li><a href="secciones/contactanos.html">Contactanos</a></li>
 
-                    </ul>
-                </nav>
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img class="logo" src="./Imagenes globales/logoSPF.jpg" alt="Logo marca"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Inicio
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="#main">Encabezado</a></li>
+                                  <li><a class="dropdown-item" href="#footer">Pie de pagina</a></li>
+                                </ul>
+                              </li>
+                          <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./secciones/genealogia.html">Familias</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./secciones/mapa.html">Lugares</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./secciones/capitulos.html">Lista episodios</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./secciones/about.html">Acerca de</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./secciones/contactanos.html">Contactanos</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+
 
             </div>
 
@@ -216,83 +234,11 @@
 
             </div>
         </section>
-        <section>
-            <h3>Carrousel de los personajes de tu familia favorita</h3>
-            <div id="carouselExampleIndicators" class="carousel slide  w-25 mx-auto text-center "
-                data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                        aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./Imagenes personajes/Homer_Simpson.png" class="d-block w-100" alt="...">
-                        <p class="f-10">Homero es el personaje principal de la serie animada de televisión Los Simpson.
-                            Básicamente,
-                            Homer es una sátira de los norteamericanos promedio, en palabras de su mismo creador Matt
-                            Groening. Las bromas indirectas se pueden encontrar en su personalidad, su actitud, su
-                            filosofía, su idiosincrasia, etc</p>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./Imagenes personajes/Marge_Simpson.png" class="d-block w-100" alt="...">
-                        <p>
-                            Marge es uno de los personajes principales de la serie animada Los Simpson. es la esposa de
-                            Homero Simpson, y madre de 3 hijos llamados: Bart Simpson de 10 años, Lisa Simpson de 8 y
-                            Maggie Simpson.
-                        </p>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./Imagenes personajes/Lisa_Simpson.png" class="d-block w-100" alt="...">
-                        <p>
-                            Lisa es un personaje principal de la serie de televisión animada Los Simpson. Es la hija
-                            mediana de Homer y Marge Simpson, y la hermana de Bart y Maggie. Goza de notable
-                            protagonismo y complejidad en la serie aunque es uno de los personajes principales menos
-                            popular.
-                        </p>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./Imagenes personajes/Bart_Simpson.png" class="d-block w-100" alt="...">
-                        <p>
-                            Bart es decididamente el más rebelde y travieso de la familia. Es un muchacho simpático y
-                            también muy travieso, que hace muchas bromas con su mejor amigo Milhouse. Sigue los
-                            programas de su ídolo Krusty el Payaso. Es desobediente y hace todo lo que le pasa por la
-                            cabeza.
-                        </p>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./Imagenes personajes/Maggie_Simpson.png" class="d-block w-100" alt="...">
-                        <p>
-                            Maggie es un personaje principal de la serie de televisión de dibujos animados Los Simpson.
-                            Maggie es la tercera y la hija más joven del matrimonio protagonista, Homer Simpson y Marge
-                            Simpson, con apenas dos años de vida. Sus hermanos mayores son Bart Simpson y Lisa Simpson.
-                        </p>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
 
-        </section>
         <section>
-            <div>
+            <div class="contenedorTemas">
                 <div>
-                    <div>
+                    <div class="textoTemas">
                         <h4>Secuencia de apertura</h4>
                         <p>La secuencia de apertura de Los Simpson es una de las señas de identidad más memorables de la
                             serie. La mayor parte de los episodios comienzan con la cámara acercándose al título de la
@@ -301,7 +247,46 @@
                     </div>
                     <div>
                         <figure>
-                            
+                            <img src="./Imagenes globales/losSimpsonSillon.jpg" alt="Imagen apertura de episodio">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contenedorTemas">
+                <div>
+                    <div>
+                        <h4>Especiales de Halloween</h4>
+                        <p>El episodio especial de Halloween se ha convertido en una tradición. El primer especial de
+                            Halloween, Treehouse of Horror, se emitió en la segunda temporada de Los Simpson y
+                            estableció el patrón de contar tres historias autoconclusivas por episodio de
+                            Halloween.88​Estos segmentos normalmente presentan a la familia en algún escenario
+                            terrorífico, de ciencia ficción o sobrenatural que a menudo parodian u homenajean otras
+                            obras de esos géneros..</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./Imagenes globales/especialHalloween.jpg" alt="Especial Halloween">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div>
+                    <div>
+                        <h4>Chistes</h4>
+                        <p>La mayoría de los personajes principales y secundarios de la serie tienen un latiguillo.91​
+                            Entre las expresiones más notables se encuentra el gruñido de fastidio de Homer «D'oh!»
+                            («¡Ouh!» o «¡Ouch!» en español), el «excelente» del Sr. Burns o la risa de Nelson Muntz
+                            «¡Ja! ¡ja!». Algunos de los latiguillos del personaje de Bart, como «¡Ay, caramba!»,
+                            aparecieron en camisetas durante los primeros años de la serie</p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./Imagenes globales/chistesSimpson.jpg" alt="imagen broma simpson">
                         </figure>
                     </div>
                 </div>
@@ -358,12 +343,9 @@
         </div>
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-        crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

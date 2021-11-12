@@ -1,132 +1,26 @@
 header{
     
     background-color: rgba(253, 247, 247, 0.9);
-    font-weight: bold;
+    
     box-shadow: 0 10px 5px 5px rgba(70, 69, 69, 0.59);
     
     
-    .logo {
-        margin-right: 5px;
-        margin-top: 2px;
-        /* display: flex;
-        justify-content: end; */
-        position: absolute;
-        right: 0;
-        img {
-            clip-path: circle(65% at center);
-        }
-
+    
     }
      
     .menu{
         text-align: center;    
-        font-size: 16px;
+        
         padding-bottom: 10px;
         margin-bottom: 20px;
+        .logo {
+            width: 70px;
+            border: 1px solid grey;
+            clip-path: circle(65% at center);
+            
+        }
         
-        .menu__titulo{
-            padding-top: 50px;
-            font-size: 50px;
-            margin-bottom: 20px;
-            font-weight: 20px;
-            h3 {
-                font-size: 100%;
-            }
-        }
-        nav{
-           
-            .menu__Element{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                flex-wrap: nowrap;
-                color:$color-Link;
-                font-family: 'Arvo', serif;
-                    
-                    
-                
-                ul{
-                    display: none;
-                    background-color: rgb(209, 209, 209);
-                }
-                
-                li{
-                    display: block;
-                    &:hover{
-                        ul{
-                            display: block;
-                            cursor: pointer; 
-                        };
-                    }
-                    
-                }  
-                    
-                     
-                    
-                }
-            }
-        }
     
     }
 
-    @media only screen and (max-width: 900px)
-    {
-        header{
-            background-color: $bgcolorThird;
-            font-weight: bold;   
-            .menu{
-                text-align: center;    
-                font-size: 12px;
-                padding-bottom: 10px;
-                margin-bottom: 20px;
-                
-                .menu__titulo{
-                    font-size: 30px;
-                    margin-bottom: 20px;
-                }
-                nav{
-                   
-                    .menu__Element{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-around;
-                        flex-wrap: wrap;
-                        color:$color-Link;
-                        font-family: $font-Simpson;
-                        padding: 0;
-                        color: white;
-                       
-                        ul{
-                            display: none;
-                            background-color: rgb(209, 209, 209);
-                            
-                        }
-                        
-                        li{
-                            display: block;
-                            &:hover{
-                                ul{
-                                    display: block;
-                                    cursor: pointer; 
-                                    
-                                };
-                            }
-                            background-color: $bgcolorSecond;
-                            width: 100%;
-                            margin: auto;  
-                            height: 30px; 
-                            font-weight: normal;
-                            
-                        }  
-                        a{
-                            color: white;
-                            font-weight: normal;
-                        }    
-                             
-                            
-                        }
-                    }
-                }
-            }
-        
-    }
+   
